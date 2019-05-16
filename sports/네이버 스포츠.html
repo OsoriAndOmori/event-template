@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html
+  lang="ko"
+  data-useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
+>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script
+      type="text/javascript"
+      async=""
+      src="./네이버 스포츠_files/mo.ssp.veta.core.min.js"
+    ></script>
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta
+      property="og:image"
+      content="https://imgsports.pstatic.net/images/mobile/common/NAVERsports.png"
+    />
+    <meta property="og:title" content="네이버 스포츠" />
+    <meta property="og:description" content="스포츠의 시작과 끝!" />
+    <meta name="robots" content="index,nofollow" />
+    <meta property="og:url" content="http://m.sports.naver.com/index.nhn" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./네이버 스포츠_files/common.css"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="https://imgsports.pstatic.net/images/mobile/common/NAVERsports.png"
+    />
+
+    <link
+      id="_persistAdCssLink"
+      rel="stylesheet"
+      type="text/css"
+      href="./네이버 스포츠_files/mobile_sub_news_common.min.css"
+      onerror="this.remove();"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./네이버 스포츠_files/m.ag2018.css"
+    />
+
+    <title>네이버 스포츠</title>
+    <link rel="manifest" href="https://m.sports.naver.com/manifest.json" />
+
+    <link
+      rel="apple-touch-icon"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS6_57X57_iphone3.png"
+    />
+    <!-- 비 레티나 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS7_76X76_ipad.png"
+    />
+    <!-- 아이패드 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS7_120X120_iphone.png"
+    />
+    <!-- 레티나 기기 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS7_152X152_ipad_retina.png"
+    />
+    <!-- 레티나 패드 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS_167X167_iPadPro.png"
+    />
+    <!-- 레티나 패드 -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS_180X180_iPhone.png"
+    />
+    <!-- 레티나 패드 -->
+
+    <link
+      rel="apple-touch-icon"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS6_57X57_iphone3.png"
+    />
+
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <script
+      type="text/javascript"
+      src="./네이버 스포츠_files/baseJsTop.js"
+    ></script>
+
+    <script>
+      var spwp;
+      var naverAdBaseUrl = "https://mv.veta.naver.com";
+      var deployPhase = "release";
+
+      if (deployPhase === "release") {
+        JEagleEyeClient.attachOnError();
+      } else if (deployPhase === "dev") {
+        JEagleEyeClient.setDebugOnly(true);
+        JEagleEyeClient.attachOnError();
+      } else {
+        // local
+        // JEagleEyeClient.attachOnError();
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="./네이버 스포츠_files/naver.sports.m.common.DisplaySspAd.js"
+    ></script>
+
+    <script async="" src="./네이버 스포츠_files/ssp.web.sdk.js"></script>
+
+    <script>
+      var sportsAdConfiguration = [
+        {
+          uri: "/index.nhn",
+          requiredParameter: {},
+          serviceUnitId: "m_sports_shome",
+          calpParameter: "",
+          sptSection: "SPORTS_HOME"
+        }
+      ];
+
+      var enablePersist = true;
+
+      var displaySspAd = new naver.sports.m.common.DisplaySspAd({
+        newsType: "",
+        sportsAdConfig: sportsAdConfiguration,
+        oid: "",
+        sid1: "",
+        sid2: "",
+        gdid: "",
+        enablePersist: enablePersist
+      });
+
+      var spwp = displaySspAd.getSpwp();
+
+      spwp.cmd.push(function() {
+        if (displaySspAd.getUnitIdList().length > 0) {
+          spwp.requestAds({
+            adUnitIds: displaySspAd.getUnitIdList()
+          });
+        }
+      });
+    </script>
+
+    <script type="text/javascript">
+      var nsc = "Msports.home2";
+      var ispnapp = "false";
+      var focus = "";
+      var scrolltop = 0;
+      var rotateJs = Array();
+
+      function getURLHash() {
+        var sSourceURL = window.location.toString();
+        var sURLHash = "";
+        if (sSourceURL.indexOf("#") > -1) {
+          sURLHash = sSourceURL.split("#")[1];
+        }
+        return sURLHash;
+      }
+
+      function initScrollPosition() {
+        var scrolltop = eg.agent().os.name === "android" ? 1 : 0;
+
+        if (focus != "" && location.hash == "") {
+          location.href = "#" + focus;
+        } else if (location.hash == "") {
+          setTimeout(function() {
+            var currentScrollPos = document.getElementById("body").scrollTop;
+            if (currentScrollPos == 0) {
+              window.scrollTo(0, scrolltop);
+            }
+          }, 1000);
+        }
+      }
+
+      var doc = document.documentElement;
+      doc.setAttribute("data-useragent", navigator.userAgent);
+    </script>
+
+    <script
+      type="text/javascript"
+      id="undefined"
+      src="./네이버 스포츠_files/baseJsBottomLazy.js"
+    ></script>
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="57x57"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS6_57X57_iphone3.png?v=20140401"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="72x72"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS6_72X72_ipad.png?v=20140401"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="114x114"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS6_114X114_iphone4.png?v=20140401"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="76x76"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS7_76X76_ipad.png?v=20140401"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="144x144"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS6_144X144_ipad_retina.png?v=20140401"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="120x120"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS7_120X120_iphone.png?v=20140401"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      sizes="152x152"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/ios/iOS7_152X152_ipad_retina.png?v=20140401"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://imgsports.pstatic.net/images/mobile/favicon_20180622/favicon.ico?v=20140401"
+    />
+    <script>
+      (function() {
+        naver_corp_da.scouters = naver_corp_da.scouters || {};
+
+        naver_corp_da.scouters[
+          "sports_placard".trim() || "adw_da"
+        ] = new naver_corp_da.Scouter({
+          daDomain: [
+            "adcreative.naver.com",
+            "tveta.naver.net",
+            "ssl.pstatic.net/tveta",
+            "ad.naver.com",
+            "veta.naver.com"
+          ],
+          loggingUrlPrefix: "https://scouter.da.naver.com/collect/scriptError?",
+          randomNumber: 100,
+          unit: "SU10392",
+          domId: "sports_placard".trim() || "adw_da",
+          templateId: "1086",
+          ac: "7822585"
+        });
+
+        try {
+          var util = naver_corp_da.Util
+            ? new naver_corp_da.Util()
+            : new NBP_CORP.Nimp();
+          var daHTML = makeHTML();
+          var da_dom_id = "sports_placard".trim();
+          var uId =
+            da_dom_id.length > 0
+              ? da_dom_id
+              : typeof nbp_ad !== "undefined"
+              ? nbp_ad.mobilenetwork.ad_div_id
+              : "adw_da";
+          var tarEl = NBP_CORP.$(uId);
+          var lastWidth = window.innerWidth;
+          var adHeight;
+
+          var isSSPAd = function(uId) {
+            if (typeof spwp !== "undefined") {
+              var isSSP = false;
+
+              for (var idx in spwp.adUnits) {
+                var unit = spwp.adUnits[idx];
+
+                if (unit.divId === uId) {
+                  isSSP = true;
+                  break;
+                }
+              }
+
+              return isSSP;
+            } else {
+              return false;
+            }
+          };
+
+          function makeHTML() {
+            var html = "";
+
+            if (AgentDetect.IS_IOS) {
+              html +=
+                '<a data-ssp="clk" href="https://sbm.veta.naver.com/fxclick?eu=EU10041165&calp=-&oj=tLY2mRwPe2S3%2FzEV0lPDh5SwDCg%2Fla4YxmqkLLXUthdF8OXtIrDBI8dGQae0%2BgCOGjkYMfSlBx2LijzJocfLSivwNzGLZeU3geE5nvjydheBx4bStGdQFqJi6aVQg4wx1Jlb2gQp0AS%2Bhun0byDQnL1YgIGVRSzwdXRoq2Iqt3PhfdpSBcVa0LY4hV12LUbZnXJsBnXpvouqMnc6JRpJ4H97Ck%2Fy47xVbbga7ON47jFTPWtSpQBRsw&ac=7822585&src=3792285&br=2873296&evtcd=P901&x_ti=1086&tb=&oid=&sid1=&sid2=&rk=f3e912b86c4c74f637f4f8722ed2655f&eltts=fbE%2F6h2c63V%2FPCWCQHGQKg%3D%3D&lu=&brs=Y&&" style="display:block;background:#fff;text-decoration:none;">';
+            } else if (AgentDetect.IS_ANDROID) {
+              html +=
+                '<a data-ssp="clk" href="https://sbm.veta.naver.com/fxclick?eu=EU10041165&calp=-&oj=tLY2mRwPe2S3%2FzEV0lPDh5SwDCg%2Fla4YxmqkLLXUthdF8OXtIrDBI8dGQae0%2BgCOGjkYMfSlBx2LijzJocfLSivwNzGLZeU3geE5nvjydheBx4bStGdQFqJi6aVQg4wx1Jlb2gQp0AS%2Bhun0byDQnL1YgIGVRSzwdXRoq2Iqt3PhfdpSBcVa0LY4hV12LUbZnXJsBnXpvouqMnc6JRpJ4H97Ck%2Fy47xVbbga7ON47jFTPWtSpQBRsw&ac=7822585&src=3792285&br=2873297&evtcd=P901&x_ti=1086&tb=&oid=&sid1=&sid2=&rk=f3e912b86c4c74f637f4f8722ed2655f&eltts=fbE%2F6h2c63V%2FPCWCQHGQKg%3D%3D&lu=&brs=Y&&" style="display:block;background:#fff;text-decoration:none;">';
+            } else {
+              html +=
+                '<a data-ssp="clk" href="https://sbm.veta.naver.com/fxclick?eu=EU10041165&calp=-&oj=tLY2mRwPe2S3%2FzEV0lPDh5SwDCg%2Fla4YxmqkLLXUthdF8OXtIrDBI8dGQae0%2BgCOGjkYMfSlBx2LijzJocfLSivwNzGLZeU3geE5nvjydheBx4bStGdQFqJi6aVQg4wx1Jlb2gQp0AS%2Bhun0byDQnL1YgIGVRSzwdXRoq2Iqt3PhfdpSBcVa0LY4hV12LUbZnXJsBnXpvouqMnc6JRpJ4H97Ck%2Fy47xVbbga7ON47jFTPWtSpQBRsw&ac=7822585&src=3792285&br=2873298&evtcd=P901&x_ti=1086&tb=&oid=&sid1=&sid2=&rk=f3e912b86c4c74f637f4f8722ed2655f&eltts=fbE%2F6h2c63V%2FPCWCQHGQKg%3D%3D&lu=&brs=Y&&" style="display:block;background:#fff;text-decoration:none;">';
+            }
+
+            html +=
+              '<span id="nbp_da_img" data-role="imgWrapper" style="display:block;width:100%;height:150px;background:url(' +
+              util.getHttpOrHttpsUrl(
+                "https://ssl.pstatic.net/tveta/libs/1227/1227759/afae7b99bc26a1b944b9_20190405181159280_bg_left.jpg",
+                "https://ssl.pstatic.net/tveta/libs/1227/1227759/afae7b99bc26a1b944b9_20190405181159280_bg_left.jpg"
+              ) +
+              ') repeat-x;background-size:auto 150px;-webkit-background-size:1px 150px;text-decoration:none;text-align:center;font-size:0;">';
+            html +=
+              '<img src="' +
+              util.getHttpOrHttpsUrl(
+                "https://ssl.pstatic.net/tveta/libs/1227/1227759/afae7b99bc26a1b944b9_20190405181159280.jpg",
+                "https://ssl.pstatic.net/tveta/libs/1227/1227759/afae7b99bc26a1b944b9_20190405181159280.jpg"
+              ) +
+              '" alt="[광고]Coupang 최대 78% 오늘만 이 가격! 바로 구매하기" width="360" height="150" data-media-width="720" data-media-height="300" data-content-type="image" style="vertical-align:top;border:none" />';
+            html += "</span>";
+            html += "</a>";
+
+            return html;
+          }
+
+          if (tarEl) {
+            function modifyAdSize(tarEl, adHeight) {
+              var targetWidth = parseInt(getComputedStyle(tarEl).width);
+              lastWidth = window.innerWidth;
+
+              var imgWrapper = tarEl.querySelector("[data-role='imgWrapper']");
+              var img = imgWrapper.querySelector("img");
+
+              if (targetWidth < 360) {
+                imgWrapper.style.height = "auto";
+                img.setAttribute("height", "auto");
+                img.setAttribute("width", "100%");
+              } else {
+                imgWrapper.style.height = adHeight + "px";
+                img.setAttribute("height", adHeight + "px");
+                img.setAttribute("width", "360px");
+              }
+            }
+
+            tarEl.removeAttribute("style");
+            tarEl.innerHTML = daHTML;
+            tarEl.setAttribute("data-ssp", "clk");
+
+            if (isSSPAd(uId)) {
+              spwp.onLoadAdm(uId);
+            }
+
+            adHeight = parseInt(getComputedStyle(tarEl).height);
+
+            if (parseInt(getComputedStyle(tarEl).width) < 360) {
+              modifyAdSize(tarEl, adHeight);
+            }
+
+            window.addEventListener("resize", function() {
+              var orientationCheck = setInterval(function() {
+                if (window.innerWidth !== lastWidth) {
+                  modifyAdSize(tarEl, adHeight);
+                  clearInterval(orientationCheck);
+                }
+              }, 100);
+            });
+
+            /* ActiveView */
+            var ac_end_date = "20190407235959";
+            var ad_end_date = "20190407235959";
+
+            // da_scroll_target : 지식인 태블릿 가로모드 대응 시, 선언되는 객체. da_scroll_target.targetEl에 스크롤이 될 div 엘리먼트가 셋팅됨
+            var scroll_target =
+              typeof da_scroll_target !== "undefined"
+                ? da_scroll_target.targetEl
+                : window;
+            var orientation_change_time = 500;
+
+            var active_view_percentage = 0.5;
+
+            var adblockDetector = new naver_corp_da.AdBlockDetector();
+            adblockDetector.init();
+
+            naver_corp_da.activeViews[uId] =
+              naver_corp_da.activeViews[uId] || null;
+
+            if (naver_corp_da.activeViews[uId]) {
+              naver_corp_da.activeViews[uId].clearActiveView();
+              naver_corp_da.activeViews[uId] = null;
+            }
+
+            var options = {
+              adDiv: tarEl,
+              acEndDate: ac_end_date,
+              adEndDate: ad_end_date,
+              scrollTarget: scroll_target,
+              activeViewPercentage: active_view_percentage,
+              orientationChangeTime: orientation_change_time,
+              callback: function() {
+                var eid = "";
+                var target = NBP_CORP.$(uId);
+
+                var adblockFound = adblockDetector.validateNode(target);
+
+                if (adblockFound === true) {
+                  return;
+                }
+
+                try {
+                  var target = NBP_CORP.$(uId);
+                  eid = target
+                    ? parseInt(
+                        target.getBoundingClientRect().height ||
+                          target.offsetHeight,
+                        10
+                      ) === 0
+                      ? "V000"
+                      : "V900"
+                    : "V000";
+                } catch (e) {
+                  eid = "V000";
+                } finally {
+                  if (eid === "V900")
+                    naver_corp_da.activeViews[uId].removeEventListener();
+                  var url =
+                    "https://sbm.veta.naver.com/fxview?eu=EU10041165&calp=-&oj=tLY2mRwPe2S3%2FzEV0lPDh5SwDCg%2Fla4YxmqkLLXUthdF8OXtIrDBI8dGQae0%2BgCOGjkYMfSlBx2LijzJocfLSivwNzGLZeU3geE5nvjydheBx4bStGdQFqJi6aVQg4wx1Jlb2gQp0AS%2Bhun0byDQnL1YgIGVRSzwdXRoq2Iqt3PhfdpSBcVa0LY4hV12LUbZnXJsBnXpvouqMnc6JRpJ4H97Ck%2Fy47xVbbga7ON47jFTPWtSpQBRsw&ac=7822585&src=3792285&evtcd=V900&x_ti=1086&tb=&oid=&sid1=&sid2=&rk=f3e912b86c4c74f637f4f8722ed2655f&eltts=fbE%2F6h2c63V%2FPCWCQHGQKg%3D%3D&brs=Y&&&eid=" +
+                    eid;
+
+                  util.log(url);
+                }
+              }
+            };
+
+            var initActiveView = function() {
+              naver_corp_da.activeViews[uId] = new naver_corp_da.ActiveViewSub(
+                options
+              );
+              naver_corp_da.activeViews[uId].checkActiveView();
+            };
+
+            if (isSSPAd(uId)) {
+              spwp.addCallback({
+                divId: uId,
+                callback: function() {
+                  // initActiveView();
+                  var url =
+                    "https://sbm.veta.naver.com/fxview?eu=EU10041165&calp=-&oj=tLY2mRwPe2S3%2FzEV0lPDh5SwDCg%2Fla4YxmqkLLXUthdF8OXtIrDBI8dGQae0%2BgCOGjkYMfSlBx2LijzJocfLSivwNzGLZeU3geE5nvjydheBx4bStGdQFqJi6aVQg4wx1Jlb2gQp0AS%2Bhun0byDQnL1YgIGVRSzwdXRoq2Iqt3PhfdpSBcVa0LY4hV12LUbZnXJsBnXpvouqMnc6JRpJ4H97Ck%2Fy47xVbbga7ON47jFTPWtSpQBRsw&ac=7822585&src=3792285&evtcd=V900&x_ti=1086&tb=&oid=&sid1=&sid2=&rk=f3e912b86c4c74f637f4f8722ed2655f&eltts=fbE%2F6h2c63V%2FPCWCQHGQKg%3D%3D&brs=Y&&eid=V900&";
+                  util.log(url);
+                }
+              });
+            } else {
+              options.activeViewTime = 1000;
+              initActiveView();
+            }
+          }
+        } catch (e) {
+          // scouter logging
+          naver_corp_da.scouters[
+            "sports_placard".trim() || "adw_da"
+          ].collectError(e);
+        }
+      })();
+    </script>
+  </head>
+
+  <body class="NO_TAP_HIGHLIGHT " id="body" style="">
+    <div class="u_skip">
+      <a href="https://m.sports.naver.com/index.nhn#ct">본문 바로가기</a>
+    </div>
+    <div class="dimmed2" id="_dimmed_layer2"></div>
+
+    <div id="wrap" class="sports_home">
+      <header id="header">
+        <!-- header -->
+        <div class="gnb">
+          <h1 class="logo">
+            <a
+              href="http://m.naver.com/"
+              class="naver"
+              onclick="gnbNclick(&#39;naver&#39;);"
+              >네이버</a
+            >
+            <a
+              href="https://m.sports.naver.com/index.nhn"
+              class="sports"
+              onclick="gnbNclick(&#39;sports&#39;);"
+              >스포츠</a
+            >
+          </h1>
+          <a class="menu" id="_left_slide_toggle_btn"><span>메뉴</span></a>
+          <a class="score" id="_right_slide_toggle_btn"
+            ><span>오늘의 경기</span></a
+          >
+        </div>
+        <script>
+          //플로팅메뉴일때와 아닐때에 따라  클릭코드가 달라져 추가함..
+          function gnbNclick(code) {
+            var prefix = "gnb";
+            if ($(".gnb").hasClass("fix")) {
+              prefix = "fmb";
+            }
+            nclk(this, prefix + "." + code, "", "");
+          }
+        </script>
+        <!-- header -->
+
+        <div
+          class="lnb new_scroll"
+          id="lnb_view"
+          style="visibility: visible; touch-action: pan-y pinch-zoom;"
+        >
+          <div
+            class="scroller"
+            style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);"
+          >
+            <ul>
+              <li class="lnb_li selected">
+                <a
+                  href="https://m.sports.naver.com/index.nhn"
+                  onclick="nclk(this, &#39;snb.home&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">홈</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/kbaseball/index.nhn"
+                  onclick="nclk(this, &#39;snb.baseball&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">야구</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/wbaseball/index.nhn"
+                  onclick="nclk(this, &#39;snb.wbaseball&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">해외야구</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/kfootball/index.nhn"
+                  onclick="nclk(this, &#39;snb.soccer&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">축구</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/wfootball/index.nhn"
+                  onclick="nclk(this, &#39;snb.wsoccer&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">해외축구</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/basketball/index.nhn"
+                  onclick="nclk(this, &#39;snb.basketball&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">농구</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/volleyball/index.nhn"
+                  onclick="nclk(this, &#39;snb.volleyball&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">배구</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/golf/index.nhn"
+                  onclick="nclk(this, &#39;snb.golf&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">골프</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/general/index.nhn"
+                  onclick="nclk(this, &#39;snb.general&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">일반</span></a
+                >
+              </li>
+              <li class="lnb_li ">
+                <a
+                  href="https://m.sports.naver.com/esports/index.nhn"
+                  onclick="nclk(this, &#39;snb.esports&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span class="lnb_mnu">e스포츠&amp;게임</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script>
+          (function() {
+            newIscroll(
+              "#lnb_view",
+              horizontalScrollOpt,
+              "#lnb_view>div>ul>li.selected"
+            );
+          })();
+        </script>
+      </header>
+
+      <div
+        class="slide_lft"
+        id="_left_slide"
+        style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+      >
+        <div class="aside_menu" id="aside_menu">
+          <div id="view" class="new_scroll" style="touch-action: none;">
+            <div
+              style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);"
+            >
+              <header>
+                <h1 class="spr logo">
+                  <a
+                    href="http://m.naver.com/"
+                    class="naver"
+                    onclick="nclk(this, &#39;mms.naver&#39;, &#39;&#39;, &#39;&#39;);"
+                    >NAVER</a
+                  >
+                  <a
+                    href="https://m.sports.naver.com/index.nhn"
+                    class="sports"
+                    onclick="nclk(this, &#39;mms.sports&#39;, &#39;&#39;, &#39;&#39;);"
+                    >SPORTS</a
+                  >
+                </h1>
+                <a
+                  href="https://m.sports.naver.com/search.nhn"
+                  class="search"
+                  onclick="nclk(this, &#39;mms.search&#39;, &#39;&#39;, &#39;&#39;);"
+                  ><span>검색</span></a
+                >
+                <div class="myinfo" id="_my_info">
+                  <a class="login">
+                    <p><span class="myinfo_text">로그인해주세요.</span></p>
+                  </a>
+                  <a class="button">로그인</a>
+                </div>
+              </header>
+
+              <div class="aside_set">
+                <ul class="set_menu" id="leftSideTab">
+                  <li class="selected" id="myteamTabBtn">
+                    <a
+                      onclick="javascript:oLeftSlider.changeTab(&#39;myteam&#39;);"
+                      >마이팀</a
+                    >
+                  </li>
+                  <li id="mycommentTabBtn">
+                    <a
+                      onclick="javascript:oLeftSlider.changeTab(&#39;mycomment&#39;);"
+                      >내댓글</a
+                    >
+                  </li>
+                </ul>
+                <div class="set_wrap" id="_my_page">
+                  <div class="aside_mycmt no">
+                    <p>
+                      로그인 하시면<br />내댓글 등급과 댓글 목록을<br />확인해
+                      보실 수 있습니다.
+                    </p>
+                    <a class="btn">네이버 아이디로 로그인</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="page_fast">
+                <a
+                  onclick="nclk(this, &#39;tbm.top&#39;, &#39;&#39;, &#39;&#39;); javascript:oLeftSlider.scrollTop();"
+                  ><b class="spr_bf">맨위로</b></a
+                >
+              </div>
+
+              <footer>
+                <div class="service_info">
+                  <div class="main_btn_wrap">
+                    <a
+                      href="javascript:moveToLoginForm();"
+                      class="main_btn"
+                      onclick="nclk(this, &#39;fot.login&#39;, &#39;&#39;, &#39;&#39;);"
+                      id="login_status_left_slide"
+                      >로그인</a
+                    >
+                    <a
+                      href="http://m.naver.com/services.html?f=svc.sports"
+                      class="main_btn"
+                      onclick="nclk(this, &#39;fot.sitemap&#39;, &#39;&#39;, &#39;&#39;);"
+                      >전체서비스</a
+                    >
+                  </div>
+                  <div class="sub_btn_wrap">
+                    <a
+                      class="sub_btn"
+                      href="https://m.help.naver.com/support/service/main.nhn?serviceNo=5610"
+                      onclick="nclk(this, &#39;fot.help&#39;, &#39;&#39;, &#39;&#39;);"
+                      >스포츠 고객센터</a
+                    >
+                    <a
+                      class="sub_btn"
+                      href="https://m.help.naver.com/support/issue/report.help?serviceNo=5610"
+                      onclick="nclk(this, &#39;fot.119&#39;, &#39;&#39;, &#39;&#39;);"
+                      >문제신고</a
+                    >
+                  </div>
+                  <span class="naver"
+                    >©
+                    <a
+                      href="http://www.navercorp.com/"
+                      onclick="nclk(this, &#39;fot.navercorp&#39;, &#39;&#39;, &#39;&#39;);"
+                      >NAVER Corp.</a
+                    ></span
+                  >
+                </div>
+              </footer>
+            </div>
+          </div>
+          <a class="close" id="_left_close_btn"><span>닫기</span></a>
+        </div>
+      </div>
+      <hr />
+      <script>
+        function checkLogin2() {
+          if ($.cookie("NID_SES")) {
+            var $loginElement = $("#login_status_left_slide");
+            $loginElement.html("로그아웃");
+            $loginElement.attr("href", "javascript:naverLogout();");
+            $loginElement.attr("onClick", "nclk(this, 'fot.logout', '', '');");
+          }
+        }
+        exeJs.push(checkLogin2);
+        function initLeftSlider() {
+          window.oLeftSlider = new naver.sports.m.LeftSlider({
+            htMenuInfo: htMenuInfo,
+            serviceType: "index"
+          });
+        }
+        exeJs.push(initLeftSlider);
+        var initCommentBtn = function() {
+          window.oFoldComment = new naver.sports.m.FoldComment();
+        };
+        exeJs.push(initCommentBtn);
+      </script>
+
+      <div id="ct" class="">
+        <div class="home">
+          <div class="home_now score_on" id="home_match_bar">
+            <h2 class="u_hc">
+              진행중인 경기
+            </h2>
+
+            <a
+              href="https://m.sports.naver.com/baseball/gamecenter/kbo/index.nhn?&amp;gameId=20190407HHLT02019"
+              class="spr_bf"
+              id=""
+              onclick="nclk(this, &#39;hed.match&#39;, &#39;&#39;, &#39;&#39;);"
+            >
+              <span class="time">2019.04.07 일 14:00</span>
+
+              <div class="team_lft">
+                <span>
+                  <span class="score"
+                    ><!-- 점수 -->
+                    ‏‏‎ ‏‏‎ ‏‏‎
+                  </span>
+                  <b class="name">
+                    <img
+                      class="emblem"
+                      src="https://dthumb-phinf.pstatic.net/?src=https://imgsports.pstatic.net/images/emblem/new/epl/default/11.png&type=f108_108&refresh=1"
+                      width="33"
+                      height="33"
+                    />
+                    맨시티
+                  </b>
+                </span>
+              </div>
+              <div class="team_rgt">
+                <span>
+                  <span class="score"
+                    ><!-- 점수 -->
+                    ‏‏‎ ‏‏‎ ‏‏‎
+                  </span>
+                  <b class="name">
+                    토트넘
+                    <img
+                      class="emblem"
+                      src="https://dthumb-phinf.pstatic.net/?src=https://imgsports.pstatic.net/images/emblem/new/epl/default/19.png&type=f108_108&refresh=1"
+                      width="33"
+                      height="33"
+                    />
+                  </b>
+                </span>
+              </div>
+
+              <!-- [D] 경기상태 공통 클래스 : 예정경기는 spr만, 중계중 live, 종료 end, 취소 cancel-->
+              <div class="state" style="display: none;">
+                <strong>
+                  <span class="round">20:30</span>
+                </strong>
+              </div>
+              <div class="state">
+                <strong class="state_type soon">
+                  <span class="state_num">20:30</span>
+                  <span class="state_txt">중계예정</span>
+                </strong>
+              </div>
+            </a>
+          </div>
+
+          <!-- 스포츠홈/리그홈 카드뷰 -->
+
+          <div class="headline_group" id="_headline_group">
+            <!-- 헤드라인 뉴스 자동화 개편 안내 -->
+            <div class="headline_news_guide">
+              <div class="title_area">
+                <em class="text">헤드라인 뉴스</em>
+                <span class="ico_beta"><span class="blind">베타</span></span>
+                <!--
+			[D]
+			button.btn_guide 를 클릭해서 div.layer_area 가 나타나는 경우 ) button.btn_guide 의 aria-expanded="true"
+			button.btn_guide 를 클릭하거나 button.close_btn 을 클릭해서 div.layer_area 가 숨겨지는 경우 ) button.btn_guide 의 aria-expanded="false"
+			로 적용 해 주세요.
+		 -->
+                <button
+                  type="button"
+                  class="btn_guide"
+                  aria-expanded="false"
+                  aria-controls="wa_guide_layer"
+                >
+                  <span class="ico_guide"
+                    ><span class="blind"
+                      >헤드라인 뉴스 자동화 안내 보기</span
+                    ></span
+                  >
+                </button>
+              </div>
+              <div class="layer_area" id="wa_guide_layer" style="display:none">
+                <p class="info">
+                  헤드라인 뉴스는 이용자 반응과 기사 내용을<br />기반으로 자동
+                  추출됩니다.
+                </p>
+                <button type="button" class="btn_close">
+                  <span class="blind">헤드라인 뉴스 자동화 안내 닫기</span>
+                </button>
+              </div>
+            </div>
+            <script type="text/javascript">
+              var $btn_guide = $(".headline_news_guide .btn_guide");
+              var $layer = $(".headline_news_guide .layer_area");
+              var $btn_close = $layer.find(".btn_close");
+              $btn_guide.on("click", function() {
+                if ($layer.css("display") != "none") {
+                  $layer.hide();
+                  $(this).attr("aria-expanded", "false");
+                } else {
+                  $layer.show();
+                  $(this).attr("aria-expanded", "true");
+                }
+              });
+
+              $btn_close.on("click", function() {
+                $layer.hide();
+                $btn_guide.attr("aria-expanded", "false");
+              });
+            </script>
+            <script type="text/javascript">
+              var hedSectionId = "_";
+              var flickContents = [];
+
+              var tempContents = "";
+
+              tempContents +=
+                '<div class="headline"><div class="headline_ct single">' +
+                "<a href=\"/esports/gamecenter/lol/index.nhn?gameId=2019040717TBDTBDlol\" onClick=\"nclk(this, 'hed.img', '', 0);\">" +
+                '<div class="headline_title"><span class="title"><span class=\'ico vod\'>TV 중계</span>[TV중계] KZ vs SKT</span>' +
+                '<div class="source"><span class="time _cardtime" data-time="2019-04-07 17:00"></span></div></div>' +
+                '<div class="headline_image"><div class="inner"><img src="https://dthumb-phinf.pstatic.net/?src=https://sports-phinf.pstatic.net/20190405_72/1554426368343HRi7P_JPEG/%B7%D1%C3%A8%BD%BA_576_277.jpg&type=nf576_277&qlt=70" alt="" class="thmb_img"></div></div></a>' +
+                '</div><div class="headline_bx"><ul class="list">';
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=527918\" onClick=\"nclk(this, 'hed.txt', '', 0);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>'SKT 전 열심히 준비하겠습니다' 결혼식 전, 신랑 인터뷰</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=527863\" onClick=\"nclk(this, 'hed.txt', '', 0);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>'Deft 트리플 킬' 한타의 대승으로 분위기를 완전히 가져오는 KZ</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=527864\" onClick=\"nclk(this, 'hed.txt', '', 0);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>'압도적 경기력' 손쉽게 1세트를 가져가는 KZ</span></div></a></li>";
+
+              tempContents += "</ul></div></div>";
+
+              flickContents.push(tempContents);
+
+              var tempContents = "";
+
+              tempContents +=
+                '<div class="headline"><div class="headline_ct single">' +
+                "<a href=\"/general/gamecenter/etc/index.nhn?gameId=20190407HDB1\" onClick=\"nclk(this, 'hed.img', '', 1);\">" +
+                '<div class="headline_title"><span class="title"><span class=\'ico vod\'>TV 중계</span>[TV중계] SK호크스 vs 충남체육회</span>' +
+                '<div class="source"><span class="time _cardtime" data-time="2019-04-07 16:10"></span></div></div>' +
+                '<div class="headline_image"><div class="inner"><img src="https://dthumb-phinf.pstatic.net/?src=https://imgsports.pstatic.net/images/admin/crop/201904/1554605430628.jpg&type=nf576_277&qlt=70" alt="" class="thmb_img"></div></div></a>' +
+                '</div><div class="headline_bx"><ul class="list">';
+
+              tempContents +=
+                "<li><a href=\"/general/gamecenter/etc/index.nhn?gameId=20190407HDB2\" onClick=\"nclk(this, 'hed.txt', '', 1);\"><div><span class=\"title\"><span class='ico vod'>TV 중계</span>[TV중계] 광주도시공사 vs 컬러풀대구 - 18:00</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=528358\" onClick=\"nclk(this, 'hed.txt', '', 1);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>20190406_2018-2019 SK핸드볼코리아리그_인천도시공사 vs 두산_하이라이트</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=528118\" onClick=\"nclk(this, 'hed.txt', '', 1);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>20190405_2018-2019 SK핸드볼코리아리그_SK호크스 vs 하남시청_하이라이트</span></div></a></li>";
+
+              tempContents += "</ul></div></div>";
+
+              flickContents.push(tempContents);
+
+              var tempContents = "";
+
+              tempContents +=
+                '<div class="headline"><div class="headline_ct double">';
+              var imgTag = "";
+              if ($(document).width() < 768) {
+                imgTag =
+                  '<img src="https://dthumb-phinf.pstatic.net/?src=https://imgnews.pstatic.net/image/477/2019/04/06/0000175151_001_20190406204607732.jpg?type=w647&type=nf284_254&qlt=70" alt="">';
+              } else {
+                imgTag =
+                  '<img src="https://dthumb-phinf.pstatic.net/?src=https://imgnews.pstatic.net/image/477/2019/04/06/0000175151_001_20190406204607732.jpg?type=w647&type=nf576_277&qlt=70" alt="">';
+              }
+              tempContents +=
+                "<a href=\"/baseball/gamecenter/kbo/index.nhn?gameId=20190407HHLT02019\" onClick=\"nclk(this, 'hed.img', '', 2);\">" +
+                '<div class="headline_title"><span class="title"><span class=\'ico vod\'>TV 중계</span>[KBO리그 TV중계] 한화 vs 롯데</span></div>' +
+                '<div class="headline_image"><div class="inner">' +
+                imgTag +
+                "</div></div></a>";
+
+              var imgTag = "";
+              if ($(document).width() < 768) {
+                imgTag =
+                  '<img src="https://dthumb-phinf.pstatic.net/?src=https://imgsports.pstatic.net/images/admin/crop/201904/1554600383936.jpg&type=nf284_254&qlt=70" alt="">';
+              } else {
+                imgTag =
+                  '<img src="https://dthumb-phinf.pstatic.net/?src=https://imgsports.pstatic.net/images/admin/crop/201904/1554600383936.jpg&type=nf576_277&qlt=70" alt="">';
+              }
+              tempContents +=
+                "<a href=\"/baseball/gamecenter/kbo/index.nhn?gameId=20190407NCOB02019\" onClick=\"nclk(this, 'hed.img', '', 2);\">" +
+                '<div class="headline_title"><span class="title"><span class=\'ico vod\'>TV 중계</span>[KBO리그 TV중계] NC vs 두산</span></div>' +
+                '<div class="headline_image"><div class="inner">' +
+                imgTag +
+                "</div></div></a>";
+              tempContents +=
+                '</div><div class="headline_bx"><ul class="list type_match">';
+
+              tempContents +=
+                "<li><a href=\"/baseball/gamecenter/kbo/index.nhn?gameId=20190407SSSK02019\" onClick=\"nclk(this, 'hed.txt', '', 2);\">" +
+                '<div><span class="title">' +
+                "<span class='ico vod'>TV 중계</span>" +
+                "[KBO리그 TV중계] 삼성 vs SK" +
+                "</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/kbaseball/news/read.nhn?oid=311&aid=0000976221\" onClick=\"nclk(this, 'hed.txt', '', 2);\">" +
+                '<div><span class="title">' +
+                '<span class="headline_game">' +
+                ' <img src="https://imgsports.pstatic.net/images/emblem/new/kbo/default/LG.png" width="24" height="24" alt="LG">' +
+                ' <img src="https://imgsports.pstatic.net/images/emblem/new/kbo/default/KT.png" width="24" height="24" alt="KT">' +
+                "</span>" +
+                "'박경수 결승포+손동현 첫 승' KT, LG전 2연승·위닝시리즈" +
+                "</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/kbaseball/news/read.nhn?oid=477&aid=0000175275\" onClick=\"nclk(this, 'hed.txt', '', 2);\">" +
+                '<div><span class="title">' +
+                '<span class="headline_game">' +
+                ' <img src="https://imgsports.pstatic.net/images/emblem/new/kbo/default/WO.png" width="24" height="24" alt="키움">' +
+                ' <img src="https://imgsports.pstatic.net/images/emblem/new/kbo/default/HT.png" width="24" height="24" alt="KIA">' +
+                "</span>" +
+                " 7일 광주 키움-KIA전 우천 취소… 시즌 1호" +
+                "</span></div></a></li>";
+
+              tempContents += "</ul></div></div>";
+
+              flickContents.push(tempContents);
+
+              var tempContents = "";
+
+              tempContents +=
+                '<div class="headline"><div class="headline_ct single">' +
+                "<a href=\"/kfootball/news/read.nhn?oid=343&aid=0000090043\" onClick=\"nclk(this, 'hed.img', '', 3);\">" +
+                '<div class="headline_title"><span class="title">‘데얀-염기훈 연속골’ 수원, 강원에 2-0 완승</span>' +
+                '<div class="source"><span class="time _cardtime" data-time="2019-04-07 15:52:04.0"></span> <span class="provider">베스트일레븐</span></div></div>' +
+                '<div class="headline_image"><div class="inner"><img src="https://dthumb-phinf.pstatic.net/?src=http://imgnews.naver.net/image/343/2019/04/07/20190407211_20190407155204782.jpg&type=nf576_277&qlt=70" alt="" class="thmb_img"></div></div></a>' +
+                '</div><div class="headline_bx"><ul class="list">';
+
+              tempContents +=
+                "<li><a href=\"/kfootball/news/read.nhn?oid=076&aid=0003400910\" onClick=\"nclk(this, 'hed.txt', '', 3);\"><div><span class=\"title\">제주, 원정 6연전 결국 '0승'으로 마감, 포항과 1대1 무 [K1 현장리뷰]</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=528714\" onClick=\"nclk(this, 'hed.txt', '', 3);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>염기훈의 완벽한 왼발 프리킥! 개인 통산 70-70 달성!</span></div></a></li>";
+
+              tempContents +=
+                "<li><a href=\"/video.nhn?id=528706\" onClick=\"nclk(this, 'hed.txt', '', 3);\"><div><span class=\"title\"><span class='ico vod'>영상 뉴스</span>팽팽한 흐름을 깬 교체 카드, 데얀의 선제골!</span></div></a></li>";
+
+              tempContents += "</ul></div></div>";
+
+              flickContents.push(tempContents);
+
+              var tempContents = "";
+
+              tempContents +=
+                '<div class="headline"><div class="headline_ct single">' +
+                "<a href=\"/wbaseball/news/read.nhn?oid=109&aid=0003984951\" onClick=\"nclk(this, 'hed.img', '', 4);\">" +
+                '<div class="headline_title"><span class="title">테임즈 부활, 연타석 스리런포…주전 자리 탈환하나</span>' +
+                '<div class="source"><span class="time _cardtime" data-time="2019-04-07 15:32:05.0"></span> <span class="provider">OSEN</span></div></div>' +
+                '<div class="headline_image"><div class="inner"><img src="https://dthumb-phinf.pstatic.net/?src=http://imgnews.naver.net/image/109/2019/04/07/0003984951_001_20190407153205996.jpg&type=nf576_277&qlt=70" alt="" class="thmb_img"></div></div></a>' +
+                '</div><div class="headline_bx"><ul class="list">';
+
+              tempContents +=
+                '<li><a href="/wbaseball/news/read.nhn?oid=005&aid=0001186883" onClick="nclk(this, \'hed.txt\', \'\', 4);"><div><span class="title">역수출 용병들 희비… 켈리 ‘꿈의 첫승’-테임즈 ‘삼진 악몽’</span></div></a></li>';
+
+              tempContents +=
+                '<li><a href="/wbaseball/news/read.nhn?oid=529&aid=0000032268" onClick="nclk(this, \'hed.txt\', \'\', 4);"><div><span class="title">밀워키 옐리치, 개막 4G 연속 홈런+끝내기 2루타 폭발</span></div></a></li>';
+
+              tempContents +=
+                "<li><a href=\"/wbaseball/news/read.nhn?oid=421&aid=0003923505\" onClick=\"nclk(this, 'hed.txt', '', 4);\"><div><span class=\"title\">'4타수 1안타' 추신수, 2G 연속 안타…타율 0.240</span></div></a></li>";
+
+              tempContents += "</ul></div></div>";
+
+              flickContents.push(tempContents);
+            </script>
+
+            <div
+              id="hdl-flick2"
+              class="headline_flick"
+              style="overflow: hidden; box-sizing: border-box; touch-action: pan-y; user-select: none; -webkit-user-drag: none; height: 340px; padding: 0px;"
+            >
+              <div
+                class="eg-flick-container"
+                style="position: relative; z-index: 2000; width: 2240px; height: 100%; top: 0px; transform: translate(-896px, 0px);"
+              >
+                <div
+                  class="hdl-flick-ct eg-flick-panel"
+                  style="position: absolute; width: 448px; height: 100%; box-sizing: border-box; top: 0px; left: 0px; transform: translate(200%, 0px);"
+                >
+                  <div class="headline">
+                    <div class="headline_ct single">
+                      <a
+                        ><div class="headline_title">
+                          <span class="title"
+                            ><span class="ico vod">TV 중계</span>[생중계] 김기훈
+                            ❤️ 김수진</span
+                          >
+                          <div class="source">
+                            <span
+                              ><i></i>오후 1시, 그린팩토리</span
+                            >
+                          </div>
+                        </div>
+                        <div class="headline_image">
+                          <div class="inner">
+                            <img src="./images/main.jpg" class="thmb_img" />
+                          </div></div
+                      ></a>
+                    </div>
+                    <div class="headline_bx">
+                      <ul class="list">
+                        <li>
+                          <a
+                            ><div>
+                              <span class="title"
+                                ><span class="ico vod">영상 뉴스</span>'수진이의 인생 꽃길, 책임지겠습니다' 결혼식 전, 신랑
+                                인터뷰</span
+                              >
+                            </div></a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            ><div>
+                              <span class="title"
+                                ><span class="ico vod">영상 뉴스</span>김기훈 사랑 맹세하며 울어... 김수진은 진짜 사랑과 결혼했다</span
+                              >
+                            </div></a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            ><div>
+                              <span class="title"
+                                ><span class="ico vod">영상 뉴스</span>'압도적
+                                경기력' 자녀 계획은 내게 맡겨라, 신랑 인터뷰</span
+                              >
+                            </div></a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="home_airs">
+            <strong class="airs"
+              ><span class="blind">AiRS추천 Beta</span></strong>
+          </div>
+
+          <div class="home_photo_off">
+            <div class="home_group">
+              <div class="home_bx2">
+                <div class="inner">
+                  <ul class="home_news">
+                    <li>
+                      <a
+                        href="https://m.sports.naver.com/volleyball/news/read.nhn?oid=421&amp;aid=0003924456"
+                        onclick="nclk(this, &#39;ccd_vlb.news&#39;, &#39;08138263_000000000000000003924456&#39;, &#39;&#39;);"
+                      >
+                        <div>
+                          <span class="title">
+                            "쉬지 않고 너 생각"...김기훈, 아내의 미모에 감탄
+                          </span>
+                          <div class="source">
+                            <span
+                              class="time _cardtime"
+                              data-time="2019-04-07 14:48:43"
+                            ></span>
+
+                            <span class="provider">뉴스1</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a
+                        href="https://m.sports.naver.com/basketball/news/read.nhn?oid=382&amp;aid=0000722319"
+                        onclick="nclk(this, &#39;ccd_bkb.news&#39;, &#39;88127053_000000000000000000722319&#39;, &#39;&#39;);"
+                      >
+                        <div>
+                          <span class="title">
+                            김수진, 신랑 대시 받을 만 했네...미모가 열일하네요
+                          </span>
+                          <div class="source">
+                            <span
+                              class="time _cardtime"
+                              data-time="2019-04-07 16:27:04"
+                            ></span>
+
+                            <span class="provider">스포츠동아</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              window.oRadioScroll = new IScroll("#radio", horizontalScrollOpt);
+            </script>
+            <div class="home_group2">
+              <div class="home_photo" id="_home_photo">
+                <div class="wrap">
+                  <div class="photo_b">
+                    <a
+                      href="https://m.sports.naver.com/kbaseball/photocenter/sports?albumId=72901&amp;imgId=1813813&amp;ctg=kbo&amp;listUrl=http://m.sports.naver.com/kbaseball/index.nhn&amp;historyBack=true"
+                      id="photoDoubleLink"
+                      onclick="nclk(this, &#39;ccd.photo&#39;, &#39;&#39;, &#39;&#39;);"
+                    >
+                      <img src="./images/7.jpg" id="album_main_image_0" />
+
+                      <img
+                        src="./네이버 스포츠_files/saved_resource(9)"
+                        id="album_main_image_1"
+                        alt=""
+                        style="display:none;"
+                      />
+
+                      <img
+                        src="./네이버 스포츠_files/saved_resource(10)"
+                        id="album_main_image_2"
+                        alt=""
+                        style="display:none;"
+                      />
+
+                      <img
+                        src="./네이버 스포츠_files/saved_resource(11)"
+                        id="album_main_image_3"
+                        alt=""
+                        style="display:none;"
+                      />
+                    </a>
+                  </div>
+                  <div class="photo_s">
+                    <div class="title" id="photo_double_title">
+                      <a
+                        onclick="nclk(this, &#39;ccd.photo&#39;, &#39;&#39;, &#39;&#39;);"
+                        ><span
+                          ><span class="ico">포토</span>'잉꼬 그 자체'</span
+                        ></a
+                      >
+                    </div>
+                    <ul class="photo_list">
+                      <li class="on">
+                        <a
+                          href="javascript:changeMainImg(0, &#39;72901&#39;, &#39;kbaseball&#39;)"
+                        >
+                          <div class="inner">
+                            <img
+                              src="./images/1.jpg"
+                              class="thmb reaction_img"
+                            />
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="javascript:changeMainImg(1, &#39;72900&#39;, &#39;golf&#39;)"
+                        >
+                          <div class="inner">
+                            <img
+                              src="./images/2.jpg"
+                              class="thmb reaction_img"
+                            />
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="javascript:changeMainImg(2, &#39;72899&#39;, &#39;golf&#39;)"
+                        >
+                          <div class="inner">
+                            <img
+                              src="./images/5.jpg"
+                              class="thmb reaction_img"
+                            />
+                          </div>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a
+                          href="javascript:changeMainImg(3, &#39;72898&#39;, &#39;general&#39;)"
+                        >
+                          <div class="inner">
+                            <img
+                              src="./images/6.jpg"
+                              class="thmb reaction_img"
+                            />
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home_group">
+              <div class="home_bx2">
+                <div class="inner">
+                  <ul class="home_news">
+                    <li>
+                      <a
+                        href="https://m.sports.naver.com/general/news/read.nhn?oid=001&amp;aid=0010746622"
+                        onclick="nclk(this, &#39;ccd_gnr.news&#39;, &#39;880000D8_000000000000000010746622&#39;, &#39;&#39;);"
+                      >
+                        <div>
+                          <span class="title">
+                            네이버 동기 "너가 가는 거 보니, 우리도 희망이 있네" 
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a>
+                        <div>
+                          <span class="title">
+                            "[단독] 김기훈❤️김수진 첫 만남 비하인드 스토리 공개"
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a>
+                        <div>
+                          <span class="title">
+                            김기훈, "오늘부터 내 인센티브는 너의 통장으로 이체할께"
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a>
+                        <div>
+                          <span class="title">
+                            유부녀 '김수진' "이해와 관심으로 축복해주셔서 감사" 결혼 소감
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a>
+                        <div>
+                          <span class="title">
+                            수진, 실물은 이런 느낌? 무보정도 자신있는 미모[★SHOT!]
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+
+                    <li>
+                      <a>
+                        <div>
+                          <span class="title">
+                            기훈. "태어나서 결혼은 처음이야" 충격
+                          </span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+
+      <div
+        class="slide_rgt"
+        id="_right_slide"
+        style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"
+      >
+        <div id="score_off" class="aside_summary">
+          <header>
+            <h2 class="title">오늘의 경기</h2>
+            <span class="today"><i>4.7</i>(일)</span>
+            <a class="spr score_hide off" id="_score_toggle_btn">SCORE OFF</a>
+          </header>
+          <div class="aside_ct" id="view2">
+            <div
+              class="aside_schedule score_off"
+              id="_score_area"
+              style="padding:50px 0;text-align:center;"
+            >
+              <img
+                src="./네이버 스포츠_files/loading_sports.gif"
+                height="8px"
+                width="32px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function initRightSlider() {
+          new naver.sports.m.RightSlider();
+        }
+        exeJs.push(initRightSlider);
+      </script>
+      <hr />
+      <a
+        href="javascript:topPage();"
+        class="page_fast2"
+        id="_page_fast2"
+        onclick="nclk(this, &#39;fot.top&#39;, &#39;&#39;, &#39;&#39;);"
+        style="display: none;"
+        ><span class="spr">맨위로</span></a
+      >
+
+      <footer id="footer">
+        <div class="page_fast" id="_page_fast">
+          <a
+            href="javascript:topPage();"
+            onclick="nclk(this, &#39;tbm.top&#39;, &#39;&#39;, &#39;&#39;);"
+            ><b class="spr_bf">맨위로</b></a
+          >
+        </div>
+      </footer>
+    </div>
+
+    <div class="dimmed" id="_dimmed_layer"></div>
+    <div class="dimmed" id="_league_end_dimmed_layer"></div>
+    <!-- //ct -->
+
+    <script>
+      if (typeof BMR !== "undefined") {
+        BMR.run("https://sp.naver.com/sp");
+      }
+    </script>
+    <script>
+      lazyloadjs(
+        "https://ssl.pstatic.net/static.sports/resources/mobile/2019/04/04/143850/js/generated/baseJsBottomLazy.js"
+      );
+    </script>
+  </body>
+</html>

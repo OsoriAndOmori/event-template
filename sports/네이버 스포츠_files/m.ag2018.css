@@ -1,0 +1,2996 @@
+@charset "UTF-8";
+html, body {
+	width: 100%;
+}
+
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select, nav, menu {
+	margin: 0;
+	padding: 0;
+	font-family: AppleSDGothicNeo,HelveticaNeue,sans-serif;
+	font-size: 14px;
+	line-height: 1.25em;
+}
+
+body {
+	position: relative;
+	color: #000;
+	-webkit-text-size-adjust: none;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+em, i, address {
+	font-style: normal;
+}
+
+a {
+	color: #222;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+hr {
+	display: none;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+	-webkit-appearance: none;
+}
+
+.u_hc,
+.blind {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+}
+
+.u_skip {
+	visibility: hidden;
+	overflow: hidden;
+	position: absolute;
+	left: -999em;
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.link_area {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	color: transparent;
+	font-size: 5px;
+	z-index: 30;
+}
+
+.nw_im_n {
+	margin: 0;
+}
+
+.NO_TAP_HIGHLIGHT {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.NO_TAP_HIGHLIGHT * {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.25);
+}
+
+.new_scroll {
+	overflow: hidden;
+	position: relative;
+	-ms-touch-action: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-o-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+.new_scroll .scroller {
+	position: absolute;
+	height: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+
+body.ag2018 .lnb2:before, body.ag2018 .lnb2_new:before, .ag_header_game_end_logo_box .logo_schedule:before, .ag_header_game_end_title .title:before, .ag_header_game_end_tool_box .icon_close:before, .ag_intro_box:before, .ag_intro_box .logo, .ag_intro_box .link_wrap .link:after, .ag_intro_box .medal_info .medal.gold:before, .ag_intro_box .medal_info .medal.silver:before, .ag_intro_box .medal_info .medal.bronze:before, .ag_comp_title .link:after, .home_ag_schedule .ag_match_bar_wrap .btn_prev .prev_icon, .home_ag_schedule .ag_match_bar_wrap .btn_prev.is_dimmed .prev_icon, .home_ag_schedule .ag_match_bar_wrap .btn_next .next_icon, .home_ag_schedule .ag_match_bar_wrap .btn_next.is_dimmed .next_icon, .tournament_match_card_lst .match_coutry_area.team_win:before, .btn_area .btn_more:after, .ag_schedule_area .timeline_area .match_country.win:before {
+	background-image: url(https://imgsports.pstatic.net/images/2018/m/ag/08/08/sp_ag_common.png);
+	-webkit-background-size: 335px 219px;
+	background-size: 335px 219px;
+}
+
+.ag_game_end .top_score_wrap .team .player .ag_stat.select, .ag_game_end .top_score_wrap .team .player .ag_stat.win, .ag_game_end .top_score_wrap .team .player .ag_stat.lose, .ag_game_end .top_score_wrap .team .player .ag_stat.pitcher, .ag_game_end .top_score_wrap .score_board.score_scroll .new_scroll:before {
+	background-image: url(https://imgsports.pstatic.net/images/2018/m/ag/08/27/sp_ag_game_end.png);
+	-webkit-background-size: 72px 66px;
+	background-size: 72px 66px;
+}
+
+.ag_intro_tab_area .tab_lst_item.is_selected .link:after, .ag_intro_top5_scroll .top5_lst_wrap .medal.gold:before, .ag_intro_top5_scroll .top5_lst_wrap .medal.silver:before, .ag_intro_top5_scroll .top5_lst_wrap .medal.bronze:before {
+	background-image: url(https://imgsports.pstatic.net/images/2018/m/ag/08/08/sp_ag_medal.png);
+	-webkit-background-size: 60px 14px;
+	background-size: 60px 14px;
+}
+
+.ag_date_tab_area .list.on .btn_tab:after, .ag_schedule_area .tag_area .btn_toggle:after, .ag_schedule_area .timeline_area .list.game_end .discipline_info .icon, .ag_schedule_area .timeline_area .list.game_soon .discipline_info .icon, .ag_schedule_area .timeline_area .discipline_info .discipline .medal_icon, .ag_schedule_area .timeline_area .discipline_info .link:after {
+	background-image: url(https://imgsports.pstatic.net/images/2018/m/ag/08/08/sp_ag_schedule.png);
+	-webkit-background-size: 84px 48px;
+	background-size: 84px 48px;
+}
+
+body.ag2018 .lnb2, body.ag2018 .lnb2_new {
+	position: relative;
+}
+
+body.ag2018 .lnb2:before, body.ag2018 .lnb2_new:before {
+	background-position: -217px -137px;
+	display: inline-block;
+	vertical-align: top;
+	width: 63px;
+	height: 33px;
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+body.ag2018 .lnb2 ul, body.ag2018 .lnb2_new ul {
+	position: relative;
+	z-index: 2;
+}
+
+body.ag2018 .lnb2_new:before {
+	z-index: 2;
+}
+
+body.ag2018 .lnb2_new h6 {
+	z-index: 10;
+}
+
+@media (min-width: 568px) {
+	body.ag2018 .lnb2_new .fm_slide {
+		z-index: 10;
+	}
+}
+
+.lnb a .dot {
+	margin: 0 1px;
+}
+
+.ag_header_game_end {
+	position: relative;
+	background: #e31e5d;
+	height: 41px;
+}
+
+.ag_header_game_end_logo_box {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.ag_header_game_end_logo_box .logo_schedule {
+	display: block;
+	height: 40px;
+	margin: 0 15px;
+}
+
+@media (min-width: 530px){
+	.ag_header_game_end_logo_box .logo_schedule{
+		margin: 0 70px;
+	}
+}
+
+.ag_header_game_end_logo_box .logo_schedule:before {
+	background-position: -227px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 19px;
+	height: 18px;
+	margin-top: 10px;
+	content: '';
+}
+
+.ag_header_game_end_title {
+	text-align: center;
+	background: url("https://imgsports.pstatic.net/images/2018/m/ag/08/08/game_end_header_bg.png") 50% 50% no-repeat;
+	-webkit-background-size: auto 50px;
+	background-size: auto 50px;
+}
+
+.ag_header_game_end_title .title {
+	display: inline-block;
+	padding: 12px 0;
+}
+
+.ag_header_game_end_title .title:before {
+	background-position: -132px -174px;
+	display: inline-block;
+	vertical-align: top;
+	width: 88px;
+	height: 17px;
+	content: '';
+}
+
+.ag_header_game_end_title .title_link {
+	display: inline-block;
+}
+
+.ag_header_game_end_tool_box {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.ag_header_game_end_tool_box .icon_close {
+	display: block;
+	height: 40px;
+	padding: 0 15px;
+}
+
+@media (min-width: 530px){
+	.ag_header_game_end_tool_box .icon_close{
+		padding: 0 70px;
+	}
+}
+
+.ag_header_game_end_tool_box .icon_close:before {
+	background-position: -222px -174px;
+	display: inline-block;
+	vertical-align: top;
+	width: 17px;
+	height: 17px;
+	margin-top: 11px;
+	content: '';
+}
+
+.ag2018 .section_home #sports_ad:empty {
+	margin-top: -4px;
+	border: none;
+}
+
+.headline_group + .ag2018_group {
+	margin-top: 12px;
+}
+
+.ag2018_group .ag_intro_box:only-child {
+	padding-bottom: 5px;
+	background-color: transparent;
+}
+
+.ag2018_group .ag_intro_box:only-child:before {
+	z-index: 1;
+}
+
+.ag2018_group .ag_intro_box:only-child .inner {
+	background-color: #f4f5f5;
+}
+
+.ag2018_group .ag_intro_box:only-child .info_wrap {
+	position: relative;
+	z-index: 1;
+}
+
+.ag_intro_box {
+	position: relative;
+	background-color: #f4f5f5;
+}
+
+.ag_intro_box:before {
+	background-position: 0px -97px;
+	display: inline-block;
+	vertical-align: top;
+	width: 215px;
+	height: 75px;
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box:before {
+		background-position: 0px 0px;
+		display: inline-block;
+		vertical-align: top;
+		width: 335px;
+		height: 95px;
+		right: 70px;
+	}
+}
+
+.ag_intro_box .inner {
+	position: relative;
+	padding: 10px 15px 0;
+}
+
+@media (min-width: 530px){
+	.ag_intro_box .inner{
+		padding: 10px 70px 0;
+	}
+}
+
+.ag_intro_box .logo {
+	background-position: -217px -97px;
+	display: inline-block;
+	vertical-align: top;
+	width: 110px;
+	height: 38px;
+	display: block;
+	margin-left: -2px;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .logo {
+		background-position: 0px -174px;
+		display: inline-block;
+		vertical-align: top;
+		width: 130px;
+		height: 45px;
+	}
+}
+
+.ag_intro_box .info_wrap {
+	overflow: hidden;
+	padding: 6px 0 11px 5px;
+}
+
+.ag_intro_box .link_wrap {
+	position: relative;
+	padding: 0 0 2px 5px;
+	border-top: 1px solid #e0e8ec;
+}
+
+.ag_intro_box .link_wrap:after {
+	content: '';
+	position: absolute;
+	left: -15px;
+	right: -15px;
+	bottom: 0;
+	height: 2px;
+	background: #ffc627 url("https://imgsports.pstatic.net/images/2018/m/ag/08/08/ag_home_bottom_line.png") no-repeat center;
+	-webkit-background-size: auto 2px;
+	background-size: auto 2px;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .link_wrap:after {
+		left: -70px;
+		right: -70px;
+	}
+}
+
+.ag_intro_box .link_wrap .link {
+	display: inline-block;
+	height: 40px;
+	padding-right: 3px;
+	margin-left: 7px;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	line-height: 40px;
+	color: #262c4f;
+}
+
+.ag_intro_box .link_wrap .link:first-child {
+	margin-left: 0;
+}
+
+.ag_intro_box .link_wrap .link:after {
+	background-position: -329px -110px;
+	display: inline-block;
+	vertical-align: top;
+	width: 5px;
+	height: 8px;
+	content: '';
+	margin-left: 3px;
+	vertical-align: 1px;
+}
+
+.ag_intro_box .text_info {
+	line-height: 22px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #38455f;
+	letter-spacing: -0.5px;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .text_info {
+		font-size: 15px;
+	}
+}
+
+.ag_intro_box .text_info .point {
+	font-weight: 700;
+	color: #e31e5d;
+}
+
+.ag_intro_box .text_info span {
+	font-style: italic;
+}
+
+.ag_intro_box .medal_info {
+	float: left;
+	margin-right: 5px;
+	font-size: 0;
+}
+
+.ag_intro_box .medal_info .medal {
+	position: relative;
+	display: inline-block;
+	margin-left: 3px;
+	text-align: center;
+	font-size: 12px;
+	vertical-align: top;
+}
+
+.ag_intro_box .medal_info .medal:first-child {
+	margin-left: 0;
+}
+
+.ag_intro_box .medal_info .medal.gold:before {
+	background-position: -158px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 21px;
+	height: 22px;
+	content: '';
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .medal_info .medal.gold:before {
+		background-position: -132px -193px;
+		display: inline-block;
+		vertical-align: top;
+		width: 24px;
+		height: 25px;
+	}
+}
+
+.ag_intro_box .medal_info .medal.silver:before {
+	background-position: -204px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 21px;
+	height: 22px;
+	content: '';
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .medal_info .medal.silver:before {
+		background-position: -308px -137px;
+		display: inline-block;
+		vertical-align: top;
+		width: 24px;
+		height: 25px;
+	}
+}
+
+.ag_intro_box .medal_info .medal.bronze:before {
+	background-position: -181px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 21px;
+	height: 22px;
+	content: '';
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .medal_info .medal.bronze:before {
+		background-position: -282px -137px;
+		display: inline-block;
+		vertical-align: top;
+		width: 24px;
+		height: 25px;
+	}
+}
+
+.ag_intro_box .medal_info .medal .num {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	height: 22px;
+	line-height: 22px;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	color: #fff;
+	letter-spacing: -1px !important;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .medal_info .medal .num {
+		height: 25px;
+		line-height: 25px;
+		font-size: 13px;
+	}
+}
+
+.ag_intro_box .rank_info {
+	overflow: hidden;
+}
+
+.ag_intro_box .rank_info .text {
+	line-height: 22px;
+	font-weight: 500;
+	font-size: 14px;
+	color: #38455f;
+	letter-spacing: -0.5px;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .rank_info .text {
+		line-height: 25px;
+		font-size: 15px;
+	}
+}
+
+.ag_intro_box .rank_info .text .point {
+	font-weight: 700;
+}
+
+.ag_intro_box .rank_info .text .rank {
+	color: #e31e5d;
+}
+
+.ag_intro_box .rank_info .text .num {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-weight: 700;
+	font-size: 15px;
+}
+
+@media (min-width: 530px) {
+	.ag_intro_box .rank_info .text .num {
+		font-size: 17px;
+	}
+}
+
+.ag_comp_title {
+	position: relative;
+	padding: 0 0 11px 5px;
+}
+
+.ag_comp_title .text {
+	font-size: 16px;
+	letter-spacing: -0.5px;
+	font-weight: 600;
+	color: #38455f;
+}
+
+.ag_comp_title .link {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: inline-block;
+}
+
+.ag_comp_title .link:after {
+	background-position: -329px -120px;
+	display: inline-block;
+	vertical-align: top;
+	width: 4px;
+	height: 8px;
+	margin: 4px 2px 0 4px;
+	content: '';
+}
+
+.ag_comp_title .link_text {
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	color: #738996;
+}
+
+.ag_comp_tab .ag_comp_tab_lst {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	background: #c8d0d7;
+}
+
+.ag_comp_tab .lst_item {
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	text-align: center;
+}
+
+.ag_comp_tab .lst_item .btn {
+	display: block;
+	height: 45px;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #fff;
+}
+
+.ag_comp_tab .lst_item.is_selected .btn {
+	background: #f93f7b;
+}
+
+.ag_comp_tab .lst_item .sm_txt {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.ag_comp_tab .lst_item .dot {
+	margin: 0 2px;
+	color: #e4e8eb;
+}
+
+.ag_summary_ct {
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home_ag_schedule {
+	padding: 15px 15px 0;
+	background: #f1f4f6;
+	border-top: 1px solid #e0e8ec;
+}
+
+@media (min-width: 530px){
+	.home_ag_schedule{
+		padding: 15px 70px 0;
+	}
+}
+
+.home_ag_schedule .ag_match_bar_wrap {
+	position: relative;
+}
+
+.home_ag_schedule .ag_match_bar_wrap .btn_prev {
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	padding: 33px 0;
+	padding-right: 5%;
+	width: 5%;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.home_ag_schedule .ag_match_bar_wrap .btn_prev {
+		width: 7%;
+	}
+}
+
+.home_ag_schedule .ag_match_bar_wrap .btn_prev .prev_icon {
+	background-position: -248px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 8px;
+	height: 16px;
+}
+
+.home_ag_schedule .ag_match_bar_wrap .btn_prev.is_dimmed .prev_icon {
+	background-position: -268px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 8px;
+	height: 16px;
+}
+
+.home_ag_schedule .ag_match_bar_wrap .btn_next {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	padding: 33px 0;
+	padding-left: 5%;
+	width: 5%;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.home_ag_schedule .ag_match_bar_wrap .btn_next {
+		width: 7%;
+	}
+}
+
+.home_ag_schedule .ag_match_bar_wrap .btn_next .next_icon {
+	background-position: -258px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 8px;
+	height: 16px;
+}
+
+.home_ag_schedule .ag_match_bar_wrap .btn_next.is_dimmed .next_icon {
+	background-position: -278px -193px;
+	display: inline-block;
+	vertical-align: top;
+	width: 8px;
+	height: 16px;
+}
+
+.home_ag_schedule .match_bx_link {
+	display: block;
+}
+
+.home_ag_schedule .match_bx {
+	overflow: hidden;
+	position: relative;
+	padding: 0 5%;
+	min-height: 83px;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.home_ag_schedule .match_bx .info_area {
+	position: absolute;
+	top: 24px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+@media (max-width: 320px) {
+	.home_ag_schedule .match_bx .info_area {
+		top: 21px;
+	}
+}
+
+.home_ag_schedule .match_bx .info_area .txt_state {
+	display: block;
+	margin-top: -2px;
+	font-size: 14px;
+	color: #f93f7b;
+	letter-spacing: -0.5px;
+}
+
+.home_ag_schedule .match_bx .info_area .txt_state span {
+	font-size: 15px;
+}
+
+.home_ag_schedule .match_bx .info_area .box_state {
+	display: inline-block;
+	margin-top: 2px;
+	min-width: 55px;
+	height: 22px;
+	padding: 0 7px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	line-height: 22px;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+	background: #f93f7b;
+}
+
+.home_ag_schedule .match_bx .info_area .date {
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 14px;
+	color: #70767a;
+	letter-spacing: -0.5px;
+}
+
+.home_ag_schedule .match_bx .info_area .time {
+	display: inline-block;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 14px;
+	color: #70767a;
+	letter-spacing: -0.5px;
+}
+
+.home_ag_schedule .match_bx .info_area.game_soon .date,
+.home_ag_schedule .match_bx .info_area.game_soon .time {
+	color: #00b49d;
+}
+
+.home_ag_schedule .match_bx .info_area .sub_text {
+	display: block;
+	margin-top: 2px;
+	font-size: 12px;
+	color: #99a9b3;
+	letter-spacing: -0.5px;
+	line-height: 13px;
+}
+
+@media (max-width: 320px) {
+	.home_ag_schedule .match_bx .info_area .sub_text .game_status {
+		display: block;
+	}
+}
+
+.home_ag_schedule .match_bx .team_lft {
+	position: relative;
+	float: left;
+	width: 50%;
+}
+
+.home_ag_schedule .match_bx .team_lft .team {
+	padding-right: 45%;
+}
+
+@media (min-width: 768px) {
+	.home_ag_schedule .match_bx .team_lft .team {
+		padding-right: 36%;
+	}
+}
+
+.home_ag_schedule .match_bx .team_lft .score {
+	right: 28%;
+}
+
+@media (min-width: 768px) {
+	.home_ag_schedule .match_bx .team_lft .score {
+		right: 30%;
+	}
+}
+
+.home_ag_schedule .match_bx .team_lft .game_score {
+	float: right;
+	margin-left: 2px;
+}
+
+@media (max-width: 320px) {
+	.home_ag_schedule .match_bx .team_lft .pk_score {
+		position: absolute;
+		bottom: -10px;
+		right: 0;
+	}
+}
+
+.home_ag_schedule .match_bx .team_rgt {
+	position: relative;
+	float: left;
+	width: 50%;
+	text-align: right;
+}
+
+.home_ag_schedule .match_bx .team_rgt .team {
+	padding-left: 45%;
+}
+
+@media (min-width: 768px) {
+	.home_ag_schedule .match_bx .team_rgt .team {
+		padding-left: 36%;
+	}
+}
+
+.home_ag_schedule .match_bx .team_rgt .score {
+	left: 28%;
+}
+
+@media (min-width: 768px) {
+	.home_ag_schedule .match_bx .team_rgt .score {
+		left: 30%;
+	}
+}
+
+.home_ag_schedule .match_bx .team_rgt .game_score {
+	float: left;
+	margin-right: 2px;
+}
+
+@media (max-width: 320px) {
+	.home_ag_schedule .match_bx .team_rgt .pk_score {
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+	}
+}
+
+.home_ag_schedule .match_bx .team {
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	text-align: center;
+}
+
+.home_ag_schedule .match_bx .team .name {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	margin-top: -10px;
+	font-size: 13px;
+	font-weight: 600;
+	color: #222;
+}
+
+.home_ag_schedule .match_bx .score {
+	position: absolute;
+	top: 26px;
+	text-align: center;
+	line-height: 1;
+}
+
+.home_ag_schedule .match_bx .score:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.home_ag_schedule .match_bx .game_score {
+	font-family: HelveticaNeue-Bold,sans-serif;
+	font-size: 27px;
+}
+
+.home_ag_schedule .match_bx .lost .score {
+	color: #99a9b3;
+}
+
+.home_ag_schedule .match_bx .pk_score {
+	float: left;
+	padding-top: 13px;
+	font-family: HelveticaNeue,sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	color: #e31e5d;
+}
+
+.home_ag_schedule .match_bx .logo {
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.home_ag_game_info {
+	padding: 20px 15px 20px;
+	background: #f1f4f6;
+}
+
+@media (min-width: 530px){
+	.home_ag_game_info{
+		padding: 20px 70px 20px;
+	}
+}
+
+.ag_group_league_wrap {
+	position: relative;
+	background-color: #fff;
+}
+
+.group_score_table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.group_score_table col.win_point {
+	width: 40px;
+}
+
+.group_score_table col.round {
+	width: 35px;
+}
+
+.group_score_table col.win {
+	width: 35px;
+}
+
+.group_score_table col.draw {
+	width: 35px;
+}
+
+.group_score_table col.loss {
+	width: 39px;
+}
+
+.group_score_table thead .inner {
+	padding: 14px 0 3px;
+}
+
+.group_score_table tbody tr:first-child td:first-child .nation {
+	font-weight: 600;
+}
+
+.group_score_table tbody tr:last-child td .inner {
+	border-bottom: 0;
+	padding-bottom: 8px;
+}
+
+.group_score_table tbody tr:nth-child(n+3) td .ranking {
+	color: #949da2;
+}
+
+.group_score_table tbody tr:nth-child(n+3) td + td .num {
+	color: #99a9b3;
+}
+
+.group_score_table th {
+	font-family: AppleSDGothicNeo-medium, sans-serif-medium;
+	font-size: 11px;
+	font-weight: 600;
+	color: #9eadb6;
+}
+
+.group_score_table th:first-child {
+	text-align: left;
+}
+
+.group_score_table th:first-child .inner {
+	margin-left: 18px;
+}
+
+.group_score_table th:first-child .text {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	color: #9eadb6;
+}
+
+.group_score_table th:first-child .group_name {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	color: #f93f7b;
+}
+
+.group_score_table th:last-child .inner {
+	padding-right: 18px;
+	min-width: 52px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+.group_score_table td:last-child .inner {
+	padding-right: 4px;
+}
+
+.group_score_table td .inner {
+	position: relative;
+	height: 27px;
+	line-height: 28px;
+	border-bottom: 1px solid #f8f9fa;
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 12px;
+}
+
+.group_score_table td .inner .num {
+	font-size: 13px;
+	color: #222;
+}
+
+.group_score_table td .ranking {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 14px;
+	padding-left: 13px;
+	color: #f93f7b;
+	font-style: italic;
+	font-size: 13px;
+	font-weight: 500;
+}
+
+.group_score_table td .ranking + .nation {
+	padding-left: 33px;
+}
+
+.group_score_table td .ranking + .nation:before {
+	display: none;
+}
+
+.group_score_table td .nation {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding-top: 1px;
+	padding-right: 5px;
+	font-size: 12px;
+	color: #222;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+.ag_tournament_wrap {
+	padding: 0 15px 20px;
+	background: #fff;
+}
+
+.tournament_match_card_lst {
+	margin: 0 -5px;
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst.item_three {
+		margin: 0 -7px;
+	}
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst.item_three .match_card_item {
+		width: 33.333%;
+	}
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst.item_three .match_card_item .inner_wrap {
+		margin: 11px 7px 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst.item_two {
+		margin: 0 -7px;
+	}
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst.item_two .match_card_item {
+		width: 50%;
+	}
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst.item_two .match_card_item .inner_wrap {
+		margin: 11px 7px 0;
+	}
+}
+
+.tournament_match_card_lst:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.tournament_match_card_lst .match_card_item {
+	float: left;
+	width: 50%;
+}
+
+@media (min-width: 768px) {
+	.tournament_match_card_lst .match_card_item {
+		width: 25%;
+	}
+}
+
+.tournament_match_card_lst .match_card_item .inner_wrap {
+	margin: 11px 5px 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.tournament_match_card_lst .match_card_item.game_finish .match_sub_txt_area {
+	color: #a4b0b7;
+}
+
+.tournament_match_card_lst .match_card_item.game_on .match_sub_txt_area {
+	color: #e31e5d;
+}
+
+@media (max-width: 320px) {
+	.tournament_match_card_lst .match_card_item.game_on .match_sub_txt_area .status {
+		display: none;
+	}
+}
+
+.tournament_match_card_lst .match_card_item.game_soon .match_sub_txt_area {
+	color: #00b49d;
+}
+
+.tournament_match_card_lst .match_title_area {
+	padding-bottom: 3px;
+}
+
+.tournament_match_card_lst .match_title_area .txt {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 12px;
+	color: #7f8d95;
+}
+
+.tournament_match_card_lst .match_title_area .txt.bold_text {
+	font-size: 13px;
+	font-weight: 600;
+	color: #38455f;
+}
+
+.tournament_match_card_lst .match_ct_box {
+	border: 1px solid #e8ecef;
+}
+
+.tournament_match_card_lst .match_ct_box .inner_link_area {
+	display: block;
+}
+
+.tournament_match_card_lst .match_ct {
+	padding: 4px 0 3px 6px;
+}
+
+.tournament_match_card_lst .match_coutry_area {
+	position: relative;
+	padding-right: 10px;
+	overflow: hidden;
+}
+
+.tournament_match_card_lst .match_coutry_area.team_win:before {
+	content: '승리팀';
+	overflow: hidden;
+	position: absolute;
+	top: 7px;
+	right: 0;
+	color: transparent;
+	background-position: -329px -97px;
+	display: inline-block;
+	vertical-align: top;
+	width: 5px;
+	height: 11px;
+}
+
+.tournament_match_card_lst .match_coutry_area.team_lose .country_score {
+	color: #99a9b3;
+}
+
+.tournament_match_card_lst .match_coutry_area.team_unknown .txt {
+	color: #99a4b9;
+}
+
+.tournament_match_card_lst .match_coutry_area .img {
+	float: left;
+	margin-right: 3px;
+}
+
+.tournament_match_card_lst .match_coutry_area .txt {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	line-height: 25px;
+	color: #000;
+}
+
+.tournament_match_card_lst .match_coutry_area .country_score {
+	float: right;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	text-align: right;
+	line-height: 25px;
+	color: #000;
+}
+
+.tournament_match_card_lst .match_coutry_area .country_score .score {
+	float: right;
+}
+
+.tournament_match_card_lst .match_coutry_area .country_score .pk_score {
+	float: left;
+	padding: 8px 2px 0;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 1;
+	color: #e31e5d;
+}
+
+.tournament_match_card_lst .match_coutry_area + .match_coutry_area {
+	margin-top: -2px;
+}
+
+.tournament_match_card_lst .match_sub_txt_area {
+	position: relative;
+	padding: 0 10px;
+	height: 23px;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 11px;
+	line-height: 23px;
+}
+
+.tournament_match_card_lst .match_sub_txt_area:after {
+	position: absolute;
+	bottom: 23px;
+	left: 0;
+	right: 0;
+	height: 1px;
+	background: #f8f9fa;
+	content: '';
+}
+
+@media (max-width: 320px) {
+	.tournament_match_card_lst .match_sub_txt_area {
+		letter-spacing: -0.7px;
+	}
+}
+
+.tournament_match_card_lst .match_sub_txt_area span + span {
+	margin-left: 2px;
+}
+
+.tournament_match_card_lst .match_sub_txt_area .status {
+	letter-spacing: -0.7px;
+}
+
+.tournament_match_card_lst .match_sub_txt_area .sub_option {
+	display: block;
+	position: absolute;
+	top: -1px;
+	bottom: -1px;
+	right: -1px;
+	z-index: 10;
+	padding: 0 9px 0 8px;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: 26px;
+	color: #fff;
+}
+
+.tournament_match_card_lst .match_sub_txt_area .sub_option.onair {
+	background: #f93f7b;
+}
+
+.tournament_match_card_lst .match_sub_txt_area .sub_option.record {
+	background: #7b849a;
+}
+
+.tournament_match_card_lst .match_sub_txt_area .sub_option.cheer {
+	background: #15baab;
+}
+
+.ag_intro_tab_area {
+	position: relative;
+	padding: 0 18px;
+	border-top: 1px solid #e5ecef;
+	border-bottom: 1px solid #eaeff2;
+}
+
+@media (min-width: 530px){
+	.ag_intro_tab_area{
+		padding: 0 70px;
+	}
+}
+
+.ag_intro_tab_area .tab_lst_item {
+	display: inline-block;
+}
+
+.ag_intro_tab_area .tab_lst_item .link {
+	display: block;
+	height: 50px;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	line-height: 50px;
+	color: #949da2;
+}
+
+.ag_intro_tab_area .tab_lst_item.is_selected .link {
+	position: relative;
+	color: #33393c;
+}
+
+.ag_intro_tab_area .tab_lst_item.is_selected .link:after {
+	background-position: 0px 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 60px;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -1px;
+	width: auto;
+	background-repeat: no-repeat;
+	background-color: #27aafc;
+	content: '';
+}
+
+.ag_intro_tab_area .tab_lst_item ~ .tab_lst_item {
+	margin-left: 16px;
+}
+
+.ag_intro_tab_area .sort_option {
+	position: absolute;
+	top: 0;
+	right: 15px;
+}
+
+@media (min-width: 530px){
+	.ag_intro_tab_area .sort_option{
+		right: 70px;
+	}
+}
+
+.ag_intro_tab_area .sort_option.is_disabled .sort_option_item {
+	color: #c3cacf;
+}
+
+.ag_intro_tab_area .sort_option.is_disabled .sort_option_item:before {
+	background-color: #c3cacf;
+}
+
+.ag_intro_tab_area .sort_option_item {
+	display: inline-block;
+	position: relative;
+	height: 50px;
+	padding-left: 7px;
+	font-size: 12px;
+	line-height: 51px;
+	color: #8a9ca6;
+}
+
+@media (min-width: 768px) {
+	.ag_intro_tab_area .sort_option_item {
+		font-size: 13px;
+	}
+}
+
+.ag_intro_tab_area .sort_option_item:before {
+	display: inline-block;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	width: 3px;
+	height: 3px;
+	background: #c9d0d8;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	content: '';
+}
+
+.ag_intro_tab_area .sort_option_item.is_selected {
+	color: #e31e5d;
+}
+
+.ag_intro_tab_area .sort_option_item.is_selected:before {
+	background: #e6497c;
+}
+
+.ag_intro_tab_area .sort_option_item ~ .sort_option_item {
+	margin-left: 4px;
+}
+
+@media (min-width: 768px) {
+	.ag_intro_tab_area .sort_option_item ~ .sort_option_item {
+		margin-left: 11px;
+	}
+}
+
+.ag_empty_notice {
+	background: #fff;
+	padding: 133px 0;
+	text-align: center;
+}
+
+.ag_empty_notice .txt {
+	font-size: 15px;
+	line-height: 21px;
+	color: #b8bbbf;
+}
+
+.ag_medal_info {
+	padding: 16px 18px 0;
+	background: #fff;
+}
+
+@media (min-width: 530px){
+	.ag_medal_info{
+		padding: 16px 70px 0;
+	}
+}
+
+.ag_medal_nation_wrap {
+	position: relative;
+}
+
+.medal_score_table {
+	table-layout: fixed;
+	width: 100%;
+}
+
+.medal_score_table caption {
+	display: none;
+}
+
+.medal_score_table col.rank {
+	width: 28px;
+}
+
+.medal_score_table col.gold {
+	width: 40px;
+}
+
+@media (max-width: 320px) {
+	.medal_score_table col.gold {
+		width: 35px;
+	}
+}
+
+@media (min-width: 768px) {
+	.medal_score_table col.gold {
+		width: 57px;
+	}
+}
+
+.medal_score_table col.silver {
+	width: 40px;
+}
+
+@media (max-width: 320px) {
+	.medal_score_table col.silver {
+		width: 35px;
+	}
+}
+
+@media (min-width: 768px) {
+	.medal_score_table col.silver {
+		width: 57px;
+	}
+}
+
+.medal_score_table col.bronze {
+	width: 40px;
+}
+
+@media (max-width: 320px) {
+	.medal_score_table col.bronze {
+		width: 35px;
+	}
+}
+
+@media (min-width: 768px) {
+	.medal_score_table col.bronze {
+		width: 57px;
+	}
+}
+
+.medal_score_table col.total {
+	width: 50px;
+}
+
+@media (max-width: 320px) {
+	.medal_score_table col.total {
+		width: 45px;
+	}
+}
+
+@media (min-width: 768px) {
+	.medal_score_table col.total {
+		width: 60px;
+	}
+}
+
+.medal_score_table th {
+	font-size: 13px;
+	font-weight: normal;
+	color: #9eadb6;
+}
+
+.medal_score_table th:first-child {
+	text-align: left;
+}
+
+.medal_score_table th:first-child .inner {
+	padding-left: 7px;
+}
+
+.medal_score_table th:last-child .inner {
+	padding-right: 5px;
+	min-width: 52px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	white-space: nowrap;
+}
+
+.medal_score_table tbody tr:first-child .inner {
+	border-top: 0;
+	margin-top: -6px;
+}
+
+.medal_score_table tbody tr:last-child .inner {
+	border-bottom: 1px solid #f6f6f6;
+}
+
+.medal_score_table tbody tr.medal_kor:first-child .inner {
+	margin-top: 6px;
+}
+
+.medal_score_table tbody tr.medal_kor .inner {
+	background: #fefcec;
+	border-top: 1px solid #f9f5db;
+	border-bottom: 1px solid #f9f5db;
+}
+
+.medal_score_table tbody tr.medal_kor .nation {
+	font-weight: bold;
+}
+
+.medal_score_table tbody tr.medal_kor + tr .inner {
+	border-top: 0;
+}
+
+.medal_score_table tbody tr.medal_kor .num {
+	font-weight: bold;
+}
+
+.medal_score_table td:last-child .inner {
+	padding-right: 4px;
+}
+
+.medal_score_table td.gold .num {
+	color: #ffb628;
+}
+
+.medal_score_table td.silver .num {
+	color: #808d98;
+}
+
+.medal_score_table td.bronze .num {
+	color: #b27b41;
+}
+
+.medal_score_table td.total .num {
+	color: #38455f;
+}
+
+.medal_score_table td .inner {
+	position: relative;
+	height: 52px;
+	line-height: 52px;
+	border-top: 1px solid #f6f6f6;
+	text-align: center;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 12px;
+}
+
+.medal_score_table td .num {
+	font-size: 15px;
+	color: #222;
+}
+
+.medal_score_table td .ranking {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 21px;
+	padding-left: 3px;
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.medal_score_table td .ranking .ranking_num {
+	font-style: italic;
+	color: #000;
+}
+
+.medal_score_table td .ranking .ranking_num.empty {
+	color: #d8d9db;
+}
+
+.medal_score_table td .nation {
+	position: absolute;
+	top: 0;
+	left: -28px;
+	right: 0;
+	padding-left: 28px;
+	height: 54px;
+	overflow: hidden;
+	font-size: 15px;
+	text-align: left;
+	line-height: 54px;
+	color: #000;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.medal_score_table td .nation .flag {
+	float: left;
+}
+
+.medal_score_table td .nation .flag img {
+	margin-top: 8px;
+	margin-right: 2px;
+}
+
+.medal_score_table td .nation .name {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.btn_area {
+	width: 100%;
+	height: 48px;
+}
+
+.btn_area .btn_more {
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	border: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	background-color: transparent;
+	color: #999;
+	vertical-align: top;
+}
+
+.btn_area .btn_more:after {
+	background-position: -275px -174px;
+	display: inline-block;
+	vertical-align: top;
+	width: 14px;
+	height: 7px;
+	margin: 5px 0 0 5px;
+	content: '';
+}
+
+.ag_intro_top5_scroll {
+	height: 92px;
+}
+
+.ag_intro_top5_scroll .inner_box {
+	position: relative;
+	padding: 0 18px;
+}
+
+@media (min-width: 530px){
+	.ag_intro_top5_scroll .inner_box{
+		padding: 0 70px;
+	}
+}
+
+.ag_intro_top5_scroll .top5_title {
+	position: absolute;
+	padding-top: 15px;
+	left: 18px;
+	top: 0;
+	width: 61px;
+}
+
+@media (min-width: 530px){
+	.ag_intro_top5_scroll .top5_title{
+		left: 70px;
+	}
+}
+
+.ag_intro_top5_scroll .top5_title:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 61px;
+	height: 2px;
+	background: #dfe5e9;
+	content: '';
+}
+
+.ag_intro_top5_scroll .top5_title .sub_text {
+	display: block;
+	margin-left: 2px;
+	font-size: 11px;
+	line-height: 13px;
+	color: #89919d;
+}
+
+.ag_intro_top5_scroll .top5_title .title {
+	display: block;
+	margin-top: 3px;
+	margin-left: 2px;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #38455f;
+}
+
+.ag_intro_top5_scroll .top5_title .title .num {
+	color: #e31e5d;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap {
+	padding-left: 76px;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .top5_lst {
+	white-space: nowrap;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .top5_lst_item {
+	display: inline-block;
+	margin-left: 2px;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .top5_lst_item:first-child {
+	margin-left: 0;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .card_box {
+	width: 156px;
+	padding: 5px 8px 9px 15px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .game_info_area .pictogram {
+	float: right;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .game_info_area .text_area {
+	overflow: hidden;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .game_info_area .game_name {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: block;
+	margin-top: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+	color: #222;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .game_info_area .game_player {
+	display: block;
+	font-size: 11px;
+	color: #89919d;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .game_info_area .game_player .number {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal:before {
+	margin-top: 5px;
+	margin-right: -2px;
+	content: '';
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal.gold {
+	color: #ffb628;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal.gold:before {
+	background-position: -11px -4px;
+	display: inline-block;
+	vertical-align: top;
+	width: 9px;
+	height: 10px;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal.silver {
+	color: #808d98;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal.silver:before {
+	background-position: -22px -4px;
+	display: inline-block;
+	vertical-align: top;
+	width: 9px;
+	height: 10px;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal.bronze {
+	color: #b27b41;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal.bronze:before {
+	background-position: 0px -4px;
+	display: inline-block;
+	vertical-align: top;
+	width: 9px;
+	height: 10px;
+}
+
+.ag_intro_top5_scroll .top5_lst_wrap .medal ~ .medal {
+	margin-left: 4px;
+}
+
+.ag_medal_kor_wrap {
+	position: relative;
+}
+
+.ag_medal_kor_wrap .medal_score_table tbody tr:first-child .inner {
+	margin-top: 4px;
+}
+
+.ag_medal_kor_wrap .medal_score_table td .inner {
+	height: 41px;
+	line-height: 41px;
+}
+
+.ag_medal_kor_wrap .medal_score_table td .game_type {
+	height: 41px;
+	overflow: hidden;
+	font-size: 15px;
+	text-align: left;
+	line-height: 41px;
+	color: #000;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.ag_medal_kor_wrap .medal_score_table td .game_type .pictogram {
+	float: left;
+}
+
+.ag_medal_kor_wrap .medal_score_table td .game_type .pictogram img {
+	margin: 10px 7px 0;
+}
+
+.ag_medal_kor_wrap .medal_score_table td .game_type .name {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ag_date_tab_area {
+	background-color: #fff;
+}
+
+.ag_date_tab_area .new_scroll {
+	height: 60px;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.ag_date_tab_area .scroller {
+	min-width: 100%;
+}
+
+.ag_date_tab_area .tab_list {
+	white-space: nowrap;
+	text-align: center;
+	font-size: 0;
+}
+
+.ag_date_tab_area .list {
+	display: inline-block;
+}
+
+.ag_date_tab_area .list.on .btn_tab {
+	color: #f93f7b;
+}
+
+.ag_date_tab_area .list.on .btn_tab:after {
+	background-position: -32px 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 52px;
+	height: 15px;
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0 auto;
+}
+
+.ag_date_tab_area .list.on .date {
+	color: #f93f7b;
+}
+
+.ag_date_tab_area .list .btn_tab {
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	position: relative;
+	width: 60px;
+	height: 60px;
+	padding-top: 2px;
+	font-size: 11px;
+	color: #959595;
+}
+
+.ag_date_tab_area .list .date {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-weight: 600;
+	font-size: 23px;
+	color: #c6cbd2;
+}
+
+.ag_date_tab_area .list .day {
+	display: block;
+	margin-top: -1px;
+}
+
+.ag_schedule_area {
+	background-color: #f1f3f5;
+}
+
+.ag_schedule_area .tag_area {
+	position: relative;
+	padding: 12px 15px 3px;
+	border-bottom: 1px solid #e2e5ea;
+}
+
+@media (min-width: 768px) {
+	.ag_schedule_area .tag_area {
+		padding: 12px 85px 3px;
+	}
+}
+
+.ag_schedule_area .tag_area.closed {
+	padding-bottom: 4px;
+}
+
+.ag_schedule_area .tag_area.closed .tag_list {
+	overflow: hidden;
+	height: 39px;
+}
+
+.ag_schedule_area .tag_area.closed .btn_toggle:after {
+	transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.ag_schedule_area .tag_area .tag_list {
+	margin-right: 30px;
+	font-size: 0;
+}
+
+.ag_schedule_area .tag_area .list {
+	display: inline-block;
+	margin: 0 4px 9px 0;
+}
+
+.ag_schedule_area .tag_area .list:first-child {
+	margin-left: 0;
+}
+
+.ag_schedule_area .tag_area .list.on .btn_tag {
+	background-color: #7b849b;
+	color: #fff;
+}
+
+.ag_schedule_area .tag_area .list .btn_tag {
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 13px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+	-webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+	background-color: #fff;
+	font-size: 14px;
+	color: #555;
+}
+
+.ag_schedule_area .tag_area .btn_toggle {
+	background-color: transparent;
+	border: 0;
+	-webkit-appearance: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	padding: 0 5px;
+}
+
+@media (min-width: 530px) {
+	.ag_schedule_area .tag_area .btn_toggle {
+		display: none;
+	}
+}
+
+.ag_schedule_area .tag_area .btn_toggle:after {
+	background-position: 0px 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 30px;
+	height: 30px;
+	content: '';
+}
+
+@media (min-width: 768px) {
+	.ag_schedule_area .schedule_area {
+		padding-bottom: 15px;
+	}
+}
+
+.ag_schedule_area .title_area {
+	position: relative;
+	top: 0;
+	padding: 0 15px 2px;
+	height: 55px;
+	line-height: 55px;
+	background-color: #f1f3f5;
+	font-size: 0;
+}
+
+@media (min-width: 768px) {
+	.ag_schedule_area .title_area {
+		margin: 0 70px;
+	}
+}
+
+.ag_schedule_area .title_area.fixed {
+	z-index: 100;
+	position: fixed;
+	top: 41px;
+	left: 0;
+	right: 0;
+	transition: all 0.2s ease-in-out 0s;
+	-webkit-transition: all 0.2s ease-in-out 0s;
+}
+
+@media (min-width: 768px) {
+	.ag_schedule_area .title_area.fixed {
+		top: 54px;
+	}
+}
+
+.ag_schedule_area .title_area.fixed + .timeline_area {
+	margin-top: 57px;
+}
+
+.ag_schedule_area .title_area:after {
+	content: '';
+	z-index: 1;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 2px;
+	background: #ffc627 url("https://imgsports.pstatic.net/images/2018/m/ag/08/08/ag_home_bottom_line.png") no-repeat center;
+	-webkit-background-size: auto 2px;
+	background-size: auto 2px;
+}
+
+.ag_schedule_area .title_area .date {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-weight: 300;
+	font-size: 30px;
+	color: #222;
+}
+
+.ag_schedule_area .title_area .game_num {
+	padding-left: 7px;
+	font-size: 15px;
+	color: #7b849b;
+}
+
+.ag_schedule_area .title_area .game_num .num {
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+	font-weight: 600;
+	font-size: 17px;
+	color: #f93f7b;
+}
+
+.ag_schedule_area .timeline_area {
+	border-bottom: 1px solid #f0f2f4;
+	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.ag_schedule_area .timeline_area {
+		margin: 0 70px;
+	}
+}
+
+.ag_schedule_area .timeline_area .timeline_list {
+	padding-left: 76px;
+}
+
+.ag_schedule_area .timeline_area .list {
+	position: relative;
+	padding: 14px 0 0 23px;
+	border-left: 2px solid #f0f1f4;
+}
+
+.ag_schedule_area .timeline_area .list.game_end .time_info .time {
+	color: #b7bac0;
+}
+
+.ag_schedule_area .timeline_area .list.game_end .discipline_info .icon {
+	background-position: -32px -17px;
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+}
+
+.ag_schedule_area .timeline_area .list.game_on .time_info .time {
+	color: #f93f7b;
+}
+
+.ag_schedule_area .timeline_area .list.game_on .discipline_info .icon {
+	left: -39px;
+	top: -6px;
+}
+
+.ag_schedule_area .timeline_area .list.game_on .discipline_info .icon img {
+	display: block;
+}
+
+.ag_schedule_area .timeline_area .list.game_on .discipline_info .discipline .text {
+	color: #f93f7b;
+}
+
+.ag_schedule_area .timeline_area .list.game_on .match_country .score {
+	color: #000;
+}
+
+.ag_schedule_area .timeline_area .list.game_soon .time_info .time {
+	color: #6f7681;
+}
+
+.ag_schedule_area .timeline_area .list.game_soon .discipline_info .icon {
+	background-position: -46px -17px;
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 12px;
+}
+
+.ag_schedule_area .timeline_area .list:first-child {
+	padding-top: 19px;
+}
+
+.ag_schedule_area .timeline_area .list:first-child .time_info {
+	top: 19px;
+}
+
+.ag_schedule_area .timeline_area .list:last-child .info_area {
+	border-bottom: none;
+}
+
+.ag_schedule_area .timeline_area .info_area {
+	padding: 0 15px 13px 0;
+	border-bottom: 1px solid #f6f6f8;
+}
+
+.ag_schedule_area .timeline_area .time_info {
+	position: absolute;
+	left: -78px;
+	top: 14px;
+	width: 76px;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+}
+
+.ag_schedule_area .timeline_area .time_info .time {
+	padding-left: 15px;
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.ag_schedule_area .timeline_area .discipline_info {
+	position: relative;
+	letter-spacing: -0.5px;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .icon {
+	position: absolute;
+	left: -30px;
+	top: 3px;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .icon img {
+	display: none;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .discipline {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: inline-flex;
+	max-width: 100%;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .discipline .text {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	font-weight: 600;
+	font-size: 17px;
+	color: #000;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .discipline .medal_icon {
+	background-position: 0px -32px;
+	display: inline-block;
+	vertical-align: top;
+	width: 12px;
+	height: 16px;
+	margin: 2px 0 0 5px;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .inner {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	padding-top: 2px;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .detail_discipline {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	flex: 1;
+	font-size: 14px;
+	color: #6f7681;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .link {
+	display: block;
+	padding-left: 5px;
+	line-height: 17px;
+	text-align: right;
+	font-size: 12px;
+	color: #99a9b3;
+}
+
+.ag_schedule_area .timeline_area .discipline_info .link:after {
+	background-position: -60px -17px;
+	display: inline-block;
+	vertical-align: top;
+	width: 5px;
+	height: 11px;
+	content: '';
+	margin-left: 5px;
+	vertical-align: -1px;
+}
+
+.ag_schedule_area .timeline_area .match_box_info {
+	padding: 8px 0 2px;
+}
+
+.ag_schedule_area .timeline_area .match_box_item {
+	padding: 4px 0 4px 6px;
+	border: 1px solid #edf0f4;
+	background-color: #f7f8fa;
+}
+
+.ag_schedule_area .timeline_area .match_country {
+	position: relative;
+	padding-right: 10px;
+	overflow: hidden;
+	font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Apple SD Gothic Neo, sans-serif;
+}
+
+.ag_schedule_area .timeline_area .match_country.undecided .country {
+	color: #99a4b9;
+}
+
+.ag_schedule_area .timeline_area .match_country + .match_country {
+	margin-top: -2px;
+}
+
+.ag_schedule_area .timeline_area .match_country.win:before {
+	background-position: -329px -97px;
+	display: inline-block;
+	vertical-align: top;
+	width: 5px;
+	height: 11px;
+	content: '';
+	overflow: hidden;
+	position: absolute;
+	top: 7px;
+	right: 0;
+}
+
+.ag_schedule_area .timeline_area .match_country.win .score {
+	color: #000;
+}
+
+.ag_schedule_area .timeline_area .match_country .flag {
+	float: left;
+	margin-right: 3px;
+}
+
+.ag_schedule_area .timeline_area .match_country .flag .img {
+	vertical-align: top;
+}
+
+.ag_schedule_area .timeline_area .match_country .country {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	line-height: 25px;
+	color: #000;
+}
+
+.ag_schedule_area .timeline_area .match_country .score {
+	float: right;
+	padding-left: 5px;
+	font-size: 14px;
+	font-weight: 700;
+	letter-spacing: -0.5px;
+	height: 25px;
+	line-height: 25px;
+	color: #99a9b3;
+}
+
+.ag_schedule_area .timeline_area .match_country .score .pk_score {
+	float: left;
+	padding-right: 2px;
+	line-height: 26px;
+	font-size: 10px;
+	color: #e31e5d;
+}
+
+.ag_schedule_area .timeline_area .no_schedule_info {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 202px;
+	text-align: center;
+}
+
+.ag_schedule_area .timeline_area .no_schedule_info .text {
+	display: table-cell;
+	line-height: 22px;
+	padding-top: 3px;
+	font-size: 15px;
+	color: #c6cbd2;
+	vertical-align: middle;
+}
+
+.ag_schedule_area .info_text_area {
+	padding: 12px 15px;
+	background-color: #fff;
+}
+
+@media (min-width: 768px) {
+	.ag_schedule_area .info_text_area {
+		margin: 0 70px;
+	}
+}
+
+.ag_schedule_area .info_text_area .text {
+	line-height: 17px;
+	font-size: 12px;
+	color: #b1b4ba;
+	letter-spacing: -0.5px;
+}
+
+.ag_game_end.ag_baseball_end .top_score_wrap .game_nav_wrap .game_nav {
+	border-top: none;
+}
+
+.ag_game_end .top_score_wrap {
+	background-color: #fff;
+	color: #000;
+}
+
+@media (min-width: 768px) {
+	.ag_game_end .top_score_wrap.ready .match_bx.before_lineup .team .name {
+		padding-top: 7px;
+	}
+}
+
+.ag_game_end .top_score_wrap.ready .team .player {
+	color: #ff90b3;
+}
+
+.ag_game_end .top_score_wrap.ready .team .player .ag_stat.select {
+	background-position: -40px -34px;
+}
+
+.ag_game_end .top_score_wrap.ready .game_nav_wrap .game_nav {
+	border-top: none;
+}
+
+.ag_game_end .top_score_wrap .match_bx {
+	padding-bottom: 8px;
+}
+
+@media (min-width: 768px) {
+	.ag_game_end .top_score_wrap .team_lft .player {
+		right: 68px;
+	}
+}
+
+@media (min-width: 768px) {
+	.ag_game_end .top_score_wrap .team_rgt .player {
+		left: 68px;
+	}
+}
+
+.ag_game_end .top_score_wrap .team .player {
+	clear: both;
+	padding-top: 0;
+	color: #75788c;
+}
+
+@media (min-width: 768px) {
+	.ag_game_end .top_score_wrap .team .player {
+		position: relative;
+		top: -27px;
+	}
+}
+
+.ag_game_end .top_score_wrap .team .player .ag_stat {
+	margin-right: 3px;
+}
+
+.ag_game_end .top_score_wrap .team .player .ag_stat.select {
+	background-position: -40px -51px;
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+}
+
+.ag_game_end .top_score_wrap .team .player .ag_stat.win {
+	background-position: -57px 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+}
+
+.ag_game_end .top_score_wrap .team .player .ag_stat.lose {
+	background-position: -40px 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+}
+
+.ag_game_end .top_score_wrap .team .player .ag_stat.pitcher {
+	background-position: -40px -17px;
+	display: inline-block;
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	vertical-align: -4px;
+}
+
+.ag_game_end .top_score_wrap .score_board {
+	border-color: #efefef;
+	border-bottom: 1px solid #efefef;
+	background-color: #f9f9f9;
+}
+
+.ag_game_end .top_score_wrap .score_board.score_scroll:before {
+	z-index: 10;
+	border-color: #eee;
+}
+
+.ag_game_end .top_score_wrap .score_board.score_scroll .new_scroll:before {
+	background-position: 0px 0px;
+	display: inline-block;
+	vertical-align: top;
+	width: 38px;
+	height: 66px;
+}
+
+.ag_game_end .top_score_wrap .score_board.score_scroll .score_tit {
+	border-right: none;
+	background-color: transparent;
+}
+
+.ag_game_end .top_score_wrap .score_board .score_etc {
+	background-color: #f9f9f9;
+}
+
+.ag_game_end .top_score_wrap .score_board table thead th {
+	border-color: #eee;
+	color: #b0b0b0;
+}
+
+.ag_game_end .top_score_wrap .score_board table thead th.on {
+	color: #f7427c;
+}
+
+.ag_game_end .top_score_wrap .score_board table thead th.on span:before {
+	border-color: #f7427c;
+}
+
+.ag_game_end .top_score_wrap .score_board .score_stat {
+	color: #555;
+}
+
+.ag_game_end .top_score_wrap .score_board .score_tit table td {
+	font-size: 10px;
+	color: #777;
+}
+
+.ag_game_end .top_score_wrap .score_board .score_etc {
+	color: #2565d0;
+}
+
+.ag_game_end .top_score_wrap .score_board .score_etc table th {
+	color: #2565d0;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx {
+	background: #aa0300;
+	padding-left: 0;
+}
+
+@media (min-width: 530px){
+	.ag_game_end .top_score_wrap .game_lst_bx{
+		padding-left: 70px;
+	}
+}
+
+.ag_game_end .top_score_wrap.ready {
+	background: #cc1b54;
+	color: #fff;
+}
+
+.ag_game_end .top_score_wrap.ready .match_bx .info_area .info {
+	color: #fff;
+}
+
+.ag_game_end .top_score_wrap.ready .match_bx .info_area .info .stad {
+	color: #ff90b3;
+}
+
+.ag_game_end .top_score_wrap.ready .match_bx .team .name {
+	color: #fff;
+}
+
+.ag_game_end .top_score_wrap.ready .score_bx {
+	display: none;
+}
+
+.ag_game_end .top_score_wrap.ready .game_lst_bx + .match_bx {
+	border-top: 1px solid #b30500;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li .team {
+	padding: 0 34px 0 7px;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li .team .score_area {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-family: HelveticaNeue, sans-serif;
+	line-height: 17px;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li .team .score_area .score {
+	position: static;
+	display: inline-block;
+	top: auto;
+	right: auto;
+	width: auto;
+	min-width: 7px;
+	margin-right: 7px;
+	font-size: 12px;
+	font-family: HelveticaNeue-Medium, sans-serif;
+	line-height: 17px;
+	text-align: center;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li .team .score_area .pk_score {
+	margin-right: 2px;
+	font-size: 10px;
+	color: #ff7b7a;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx:before {
+	background: #b20300;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li {
+	width: 125px;
+	background: #b20300;
+	border-left: 1px solid #aa0300;
+	border-top: 1px solid #aa0300;
+	border-bottom: 1px solid #aa0300;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li.on {
+	background: #a20303;
+	border: 1px solid #980300;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li:last-child {
+	border-right: 1px solid #aa0300;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li.on:last-child {
+	border-right: 1px solid #980300;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li.on a {
+	color: #fff;
+}
+
+.ag_game_end .top_score_wrap .game_lst_bx .game_lst li a {
+	color: #f0e7ce;
+}
+
+.ag_game_end .top_score_wrap .match_bx .score {
+	font-size: 0;
+}
+
+.ag_game_end .top_score_wrap .match_bx .score .pk_score {
+	font-family: HelveticaNeue, sans-serif;
+	font-size: 14px;
+	letter-spacing: -0.5px;
+	color: #e6165b;
+}
+
+.ag_game_end .top_score_wrap .match_bx .score .game_score {
+	font-size: 32px;
+}
+
+.ag_game_end .top_score_wrap .match_bx .team_lft .score .pk_score {
+	margin-right: 4px;
+}
+
+.ag_game_end .top_score_wrap .match_bx .team_rgt .score .pk_score {
+	margin-left: 4px;
+}
+
+.ag_game_end .top_score_wrap .match_bx.before_game .team_lft .score, .ag_game_end .top_score_wrap .match_bx.before_game .team_rgt .score {
+	color: #dc7c94;
+}
+
+@media (min-width: 768px) {
+	.ag_game_end .top_score_wrap .match_bx .team_rgt .team .logo {
+		float: left;
+	}
+}
+
+.ag_game_end .top_score_wrap .match_bx .team .logo {
+	width: 61px;
+}
+
+.ag_game_end .top_score_wrap .match_bx .team .logo img {
+	width: 61px;
+	height: 61px;
+}
+
+.ag_game_end .top_score_wrap .match_bx .btn_state.stat1 {
+	background: #a31643;
+}
+
+.ag_game_end .top_score_wrap .match_bx .btn_state.stat2 {
+	background: #d71553;
+}
+
+.ag_game_end .top_score_wrap .match_bx .btn_state.stat3 {
+	background: #262c4f;
+}
+
+.ag_game_end .top_score_wrap .match_bx .team_lft,
+.ag_game_end .top_score_wrap .match_bx .team_rgt {
+	padding-top: 0;
+}
+
+.ag_game_end .top_score_wrap .match_bx .team .name {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-top: -4px;
+	color: #2c2c2c;
+}
+
+@media (min-width: 768px) {
+	.ag_game_end .top_score_wrap .match_bx .team .name {
+		display: inline-block;
+		padding: 0 7px;
+	}
+	.ag_game_end.ag_baseball_end .top_score_wrap .match_bx .team .name {
+		margin-top: 0;
+	}
+	.ag_game_end.ag_soccer_end .top_score_wrap .match_bx .team .name {
+		margin-top: 7px;
+	}
+}
+
+.ag_game_end .top_score_wrap .goal_bx {
+	border-color: #efefef;
+}
+
+.ag_game_end .top_score_wrap .match_bx .info_area .info {
+	color: #000;
+}
+
+.ag_game_end .top_score_wrap .match_bx .info_area .info .stad {
+	color: #8d8d8d;
+}
+
+.ag_game_end .top_score_wrap .goal_bx .score_lst li:before {
+	background: #cdcdcd;
+}
+
+.ag_game_end .top_score_wrap .goal_bx .score_lst li.suc:before {
+	background: #c20200;
+}
+
+.ag_game_end .top_score_wrap .goal_bx .score_lst li.fail:before {
+	background: url(https://imgsports.pstatic.net/images/2018/m/worldcup/06/06/sp_wc_game_end.png) no-repeat;
+	-webkit-background-size: 8px 8px;
+	background-size: 8px 8px;
+}
+
+.ag_game_end .top_score_wrap .goal_bx .goal_wrap:first-child {
+	border-color: #efefef;
+}
+
+.ag_game_end .top_score_wrap .goal_bx .goal_count {
+	color: #c20200;
+}
+
+.ag_game_end .top_score_wrap .score_bx {
+	background: #f9f9f9;
+	border-color: #efefef;
+}
+
+.ag_game_end .top_score_wrap .score_bx .score_wrap:first-child {
+	border-color: #efefef;
+}
+
+.ag_game_end .top_score_wrap .score_bx .score_lst li {
+	color: #919191;
+}
+
+.ag_game_end .top_score_wrap .score_bx .score_wrap .time {
+	color: #737373;
+}
+
+.ag_game_end .top_score_wrap .game_nav_wrap {
+	border-top: 0;
+}
+
+.ag_game_end .top_score_wrap .game_nav_wrap .game_nav {
+	background: #fff;
+	border-top: 1px solid #e3e5e8;
+	border-bottom: 1px solid #e3e5e8;
+	height: 44px;
+}
+
+.ag_game_end .top_score_wrap .game_nav_wrap .game_nav li {
+	line-height: 36px;
+}
+
+.ag_game_end .top_score_wrap .game_nav_wrap .game_nav a {
+	color: #989898;
+	line-height: 33px;
+}
+
+.ag_game_end .game_nav a span {
+	padding: 6px 7px 2px;
+}
+
+.ag_game_end .top_score_wrap .game_nav_wrap .game_nav .is_selected span {
+	border-bottom: 3px solid #d71553;
+	font-family: AppleSDGothicNeo-SemiBold, sans-serif;
+	color: #d71553;
+}
+
+.ag_game_end .end_cheer {
+	padding-top: 8px;
+	background-color: #ebebeb;
+}
+
+.ag_game_end .end_cheer .cmt_area {
+	border-top: 1px solid #e3e5e8;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap {
+	background: #06d0b6;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap .team_lft {
+	background: #f9b722;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap .team_lft .team_logo {
+	background: #ecae20;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap .team_rgt .team_logo {
+	background: #06d0b6;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap.kbo_type .team_lft:before, .ag_game_end .end_cheer .cheer_graph_wrap.kbo_type .team_rgt:before {
+	background: transparent;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap.kbo_type .team_lft {
+	z-index: auto;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap.kbo_type .txt {
+	z-index: 300;
+}
+
+.ag_game_end .end_cheer .cheer_graph_wrap.kbo_type .team_lft .point, .ag_game_end .end_cheer .cheer_graph_wrap.kbo_type .team_rgt .point {
+	z-index: 300;
+}
+
+.ag_game_end .end_cheer .chr_cmt_lst li .delete {
+	min-width: 24px;
+	text-align: right;
+}
+
+.ag_game_end .end_record .record_team_area .re_team_info ul li .li_left .bar em {
+	background-color: #ecae20;
+}
+
+.ag_game_end .end_record .record_team_area .re_team_info ul li .li_right .bar em {
+	background-color: #06c5ad;
+}
+
+.ag_game_end .end_record .record_team_area .re_team_title .t_left {
+	padding: 0 34px 0 10px;
+}
+
+.ag_game_end .end_record .record_team_area .re_team_title .t_right {
+	padding: 0 10px 0 34px;
+}
+
+.ag_game_end .end_record .record_team_area .re_team_title strong {
+	overflow: hidden;
+	display: block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.ag_game_end .end_tab.end_record_tab li a {
+	width: auto;
+}
+
+.ag_game_end .pts_wrap {
+	font-family: AppleSDGothicNeo-Regular,HelveticaNeue,sans-serif;
+}
+
+.ag_game_end .pts_wrap .view_wrap .base_wrap .next {
+	top: 140px;
+}
