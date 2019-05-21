@@ -5,6 +5,8 @@
 ## 결과물
 - [스포츠](https://github.com/OsoriAndOmori/event-template/issues/2)
 - [검색](https://github.com/OsoriAndOmori/event-template/issues/1)
+- [쇼핑](https://github.com/OsoriAndOmori/event-template/issues/3)
+- [메인](https://github.com/OsoriAndOmori/event-template/issues/4)
 
 ## contribute
 - [wicksome](https://github.com/wicksome)
